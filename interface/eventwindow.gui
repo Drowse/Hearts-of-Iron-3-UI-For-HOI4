@@ -24,7 +24,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "top_Window"
 			position = { x=0 y=0 }	
-			size = { width = 581 height =121 }
+			size = { width = 581 height = 149 }
 			moveable = yes
 			Orientation = UPPER_LEFT
 
@@ -34,12 +34,12 @@ guiTypes = {
 			}			
 		
 			instantTextBoxType = {
-				name = "Title"
-				position = { x = 14 y = 70 }
+				name = "Title" 
+				position = { x = 48 y = 70 }
 				font = "hoi4_typewriter22"
 				borderSize = {x = 0 y = 0}
 				text = "Title text here!"	
-				maxWidth = 551
+				maxWidth = 310
 				maxHeight = 32
 				format = centre
 			}
@@ -55,8 +55,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "midsection"
-			position = { x=0 y=121 }	
-			size = { width = 580 height = 100 }
+			position = { x=0 y = 148 }	
+			size = { width = 580 height = 60 }
 			moveable = yes
 			clipping = no
 			Orientation = UPPER_LEFT
@@ -68,11 +68,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "Description"
-				position = { x = 31 y = 0 }
+				position = { x = 61 y = 44 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
-				maxWidth = 512
+				maxWidth = 470
 				maxHeight = 230
 				format = left
 			}	
@@ -81,7 +81,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "bottom_Window"
 			position = { x=0 y=221 }	
-			size = { width = 581 height = 206 }
+			size = { width = 581 height = 195 }
 			moveable = yes
 			clipping = no
 			Orientation = UPPER_LEFT
@@ -99,7 +99,7 @@ guiTypes = {
 			iconType = {
 				name ="event_picture"
 				spriteType = "GFX_report_event_001"
-				position = { x = 5 y = 5 }
+				position = { x = 360 y = -325 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes				
 			}
@@ -107,16 +107,16 @@ guiTypes = {
 			iconType = {
 				name ="event_pic_clip"
 				spriteType = "GFX_event_pic_clip"
-				position = { x = -3 y = 35 }
+				position = { x = 430 y = -338 }
 				Orientation = "UPPER_LEFT"
 			}
 
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 215 y = -1 }
-				size = { width = 300 height = 30 }
-				slotsize = { width = 300 height = 47 }
+				position = { x = 5 y = 20 }
+				size = { width = 570 height = 30 }
+				slotsize = { width =570 height = 30 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
 			}
@@ -437,9 +437,9 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 115 y = 10 }
+				position = { x = 10 y = 10 }
 				size = { width = 300 height = 0 }
-				slotsize = { width = 300 height = 47 }
+				slotsize = { width = 300 height = 28 }
 				max_slots_horizontal = 1
 				Orientation = UPPER_LEFT
 			}
@@ -570,10 +570,10 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "Name"
-			position = { x = 5 y = 0 }
-			font = "hoi_20bs"
-			maxWidth = 340
-			maxHeight = 40
+			position = { x = 5 y = -1 }
+			font = "hoi4_typewriter16"
+			maxWidth = 580
+			maxHeight = 30
 			format = center
 			vertical_alignment = center
 			alwaystransparent = yes
