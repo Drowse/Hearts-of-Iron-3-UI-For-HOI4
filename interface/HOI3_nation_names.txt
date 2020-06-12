@@ -1,0 +1,27 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "hoi3_nation_name_container"
+		position = { x = 20 y = 20 }
+		
+		iconType ={
+			name ="money_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=20 y=20 }
+		}			
+		
+		instantTextBoxType = {
+			name ="hoi3_nation_name"
+			position = { x = 20 y = 20 }
+			font = "hoi_18mbs"
+            text = "hoi3_nation_name_text"
+			format = left
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+			#pdx_tooltip = "KR_PARTY_POP_EFFECT"
+			#pdx_tooltip_delayed = "party_popularity_delayed_tooltip"
+		}	
+	}
+}

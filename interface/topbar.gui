@@ -463,14 +463,14 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "time_control_window"
-			position = { x=-378 y=7 }
+			position = { x=-1560 y=22 }
 			size = { width=253 height=30 }
 			Orientation = UPPER_RIGHT
 
 			buttonType = {
 				name = "pause_button_date"
 				quadTextureSprite ="GFX_date_pause_button_bg"
-				position = { x = -197 y = 0 }
+				position = { x = -192 y = 3  }
 				Orientation = "UPPER_RIGHT"
 				shortcut = "SPACE" #Will be disabled in MP from code
 				clicksound = pause_button
@@ -479,7 +479,7 @@ guiTypes = {
 			buttonType = {
 				name = "pause_button_date_paused"
 				quadTextureSprite ="GFX_date_pause_button"
-				position = { x = -197 y = 0 }
+				position = { x = -192 y = 3 }
 				Orientation = "UPPER_RIGHT"
 				shortcut = "SPACE" #Will be disabled in MP from code
 				clicksound = pause_button
@@ -488,7 +488,7 @@ guiTypes = {
 			buttonType = {
 				name = "button_speeddown"
 				quadTextureSprite ="GFX_zoom_out"
-				position = { x = 58 y = 1 }
+				position = { x = 248 y = 10 }
 				shortcut = "KP_MINUS"
 				pdx_tooltip = "SPEED_DECREASE"
 				clicksound = time_down
@@ -498,42 +498,42 @@ guiTypes = {
 			buttonType = {
 				name = "button_speedstep1"
 				quadTextureSprite ="GFX_speed_step"
-				position = { x=94 y =27 }
+				position = { x=288 y =23 }
 				clicksound = click_default
 			}
 			
 			buttonType = {
 				name = "button_speedstep2"
 				quadTextureSprite ="GFX_speed_step"
-				position = { x=119 y =27 }
+				position = { x=288 y =17 }
 				clicksound = click_default
 			}
 			
 			buttonType = {
 				name = "button_speedstep3"
 				quadTextureSprite ="GFX_speed_step"
-				position = { x=144 y =27 }
+				position = { x=288 y =11 }
 				clicksound = click_default
 			}
 			
 			buttonType = {
 				name = "button_speedstep4"
 				quadTextureSprite ="GFX_speed_step"
-				position = { x=169 y =27 }
+				position = { x=288 y = 5 }
 				clicksound = click_default
 			}
 			
 			buttonType = {
 				name = "button_speedstep5"
 				quadTextureSprite ="GFX_speed_step"
-				position = { x=194 y =27 }
+				position = { x=288 y =-1 }
 				clicksound = click_default
 			}
 		
 			buttonType = {
 				name = "button_speedup"
 				quadTextureSprite ="GFX_zoom_in"
-				position = { x = 233 y =1 }
+				position = { x = 266 y = 10 }
 				shortcut = "KP_PLUS"
 				pdx_tooltip = "SPEED_INCREASE"
 				clicksound = time_up
@@ -542,13 +542,13 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "DateText"
-				position = { x = -175 y = 4 }
+				position = { x = -188 y = 5 }
 				textureFile = ""
-				font = "Arial12"
+				font = "hoi_18"
 				text = "7:00 29, September 1939"
 				maxWidth = 150
 				maxHeight = 32
-				format = right
+				format = left
 				Orientation = "UPPER_RIGHT"	
 				alwaystransparent = yes
 			}

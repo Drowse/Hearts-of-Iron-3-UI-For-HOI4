@@ -1,0 +1,53 @@
+
+# Special Thanks to Doruk for the coding example. Their Money Mod is here:https://steamcommunity.com/sharedfiles/filedetails/?id=1345963675
+
+guiTypes = {
+	containerWindowType = {
+		name = "money_equipment_container"
+		position = {x=280 y=100}
+		size = { width=1108 height=720 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_browser_bg"
+		}
+
+		instantTextboxType = {
+			name = "money_headline"
+			position = {x=19 y=15}
+			font = "hoi_36header"
+			text = "Purchase Options"
+			maxWidth = 500
+			maxHeight = 23
+			format = left
+		}
+		
+		iconType = {
+			name = "text_back" 
+			position = {x=29 y=64}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+	}
+		
+	containerWindowType = {
+		name = "money_container"
+		position = { x = 130 y = 40 } #990
+		instantTextBoxType = {
+			name ="money_text"
+			position = { x= -22 y = 5 }
+			font = "hoi_20b"
+			text = "MONEY_MAIN"
+			format = left
+			maxWidth = 188
+			maxHeight = 24
+			fixedsize = yes
+			
+			#pdx_tooltip = "MONEY_TOOLTIP" 
+		}
+	}
+
+}
