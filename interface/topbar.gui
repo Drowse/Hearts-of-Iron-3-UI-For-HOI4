@@ -463,15 +463,15 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "time_control_window"
-			position = { x=-1560 y=22 }
+			position = { x= 46 y=22 }
 			size = { width=253 height=30 }
-			Orientation = UPPER_RIGHT
+			Orientation = UPPER_LEFT
 
 			buttonType = {
 				name = "pause_button_date"
 				quadTextureSprite ="GFX_date_pause_button_bg"
 				position = { x = -192 y = 3  }
-				Orientation = "UPPER_RIGHT"
+				Orientation = "UPPER_LEFT"
 				shortcut = "SPACE" #Will be disabled in MP from code
 				clicksound = pause_button
 			}
@@ -479,8 +479,8 @@ guiTypes = {
 			buttonType = {
 				name = "pause_button_date_paused"
 				quadTextureSprite ="GFX_date_pause_button"
-				position = { x = -192 y = 3 }
-				Orientation = "UPPER_RIGHT"
+				position = { x = 62 y = 3 }
+				Orientation = "UPPER_LEFT"
 				shortcut = "SPACE" #Will be disabled in MP from code
 				clicksound = pause_button
 			}

@@ -48,6 +48,120 @@ guiTypes = {
 			
 			#pdx_tooltip = "MONEY_TOOLTIP" 
 		}
+		
+		iconType = {
+			name ="oil_icon"
+			spriteType = "GFX_strategic_resource_oil_small"
+			position = { x= -34 y = -45 }
+		}
+
+		instantTextBoxType = {
+			name ="oil_text"
+			position = { x = -12 y = -35  }
+			font = "Arial12"
+			text = "OIL_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "OIL_TEXT_TIP" 
+		}
+
+		iconType = {
+			name ="aluminium_icon"
+			spriteType = "GFX_strategic_resource_aluminium_small"
+			position = { x= 3 y = -44 }
+		}		
+
+		instantTextBoxType = {
+			name ="ALUMINIUM_TEXT"
+			position = { x = 33 y = -35 }
+			font = "Arial12"
+			text = "ALUMINIUM_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "ALUMINIUM_TEXT_TIP" 
+		}	
+
+		iconType = {
+			name ="rubber_icon"
+			spriteType = "GFX_strategic_resource_rubber_small"
+			position = { x= 42 y = -44 }
+		}
+
+		instantTextBoxType = {
+			name ="RUBBER_TEXT"
+			position = { x = 72 y = -35 }
+			font = "Arial12"
+			text = "RUBBER_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "RUBBER_TEXT_TIP" 
+		}
+
+		iconType = {
+			name ="tungsten_icon"
+			spriteType = "GFX_strategic_resource_tungsten_small"
+			position = { x= 84 y = -44 }
+		}		
+
+		instantTextBoxType = {
+			name ="TUNGSTEN_TEXT"
+			position = { x = 115 y = -35 }
+			font = "Arial12"
+			text = "TUNGSTEN_TEXT"
+			format = left
+			maxWidth = 20  
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "TUNGSTEN_TEXT_TIP" 
+		}		
+		
+		iconType = {
+			name ="steel_icon"
+			spriteType = "GFX_strategic_resource_steel_small"
+			position = { x= 132 y = -40 }
+		}		
+		
+		instantTextBoxType = {
+			name ="steel_text"
+			position = { x = 159 y = -35 }
+			font = "Arial12"
+			text = "STEEL_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "STEEL_TEXT_TIP" 
+		}	
+		
+		iconType = {
+			name ="chrome_icon"
+			spriteType = "GFX_strategic_resource_chrome_small"
+			position = { x= 173 y = -44 }
+		}		
+
+		instantTextBoxType = {
+			name ="CHROMIUM_TEXT"
+			position = { x = 202 y = -35 }
+			font = "Arial12"
+			text = "CHROMIUM_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "CHROMIUM_TEXT_TIP" 
+		}		
 	}
 
 }

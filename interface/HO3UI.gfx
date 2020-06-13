@@ -1,0 +1,30 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_strategic_resource_aluminium_small"
+		texturefile = "gfx/topbar_resources/strategic_resource_aluminium_small.dds"
+	}
+	spriteType = {
+		name = "GFX_strategic_resource_chrome_small"
+		texturefile = "gfx/topbar_resources/strategic_resource_chrome_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_strategic_resource_oil_small"
+		texturefile = "gfx/topbar_resources/strategic_resource_oil_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_strategic_resource_rubber_small"
+		texturefile = "gfx/topbar_resources/strategic_resource_rubber_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_strategic_resource_steel_small"
+		texturefile = "gfx/topbar_resources/strategic_resource_steel_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_strategic_resource_tungsten_small"
+		texturefile = "gfx/topbar_resources/strategic_resource_tungsten_small.dds"
+	}
