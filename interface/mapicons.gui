@@ -9,7 +9,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "unit_counter"
 		position = { x=0 y=0 }
-		size = { width = 58 height = 24 }
+		size = { width = 58 height = 52 }
 		clipping = no
 
 		buttonType = {
@@ -21,7 +21,7 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=55 y=2 }
+			position = { x=3 y=1 }
 			alwaystransparent = yes
 		}
 		
@@ -32,31 +32,32 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		iconType = {
+		iconType = { # Not needed anymore
 			name = "counter_overlay"
 			spriteType = "GFX_onmap_unit_counter_overlay"
-			position = { x=3 y=3 }
+			position = { x=9999 y=9999 }
 			alwaystransparent = yes
 		}	
 		
 		iconType = {
 			name = "count_selected"
 			spriteType = "GFX_onmap_unit_counter_selected"
-			position = { x=0 y=0 }
+			position = { x=1 y=0 }
 			alwaystransparent = yes
 		}		
 
 		iconType ={
 			name ="type"
 			spriteType = "GFX_tiled_window_transparent"
-			position = { x=3 y=3 }
+			position = { x=7 y=15 }
 			alwaystransparent = yes
+			scale = 1.7
 		}		
 		
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=36 y=6 }
-			font = "Main_14"
+			position = { x=21 y=40 }
+			font = "Main_14_black"
 			maxWidth = 20
 			maxHeight = 14
 			format = center	
@@ -65,14 +66,14 @@ guiTypes = {
 		iconType = {
 			name = "bar_org"
 			spriteType = "GFX_mapicon_unit_bar_org"
-			position = { x=14 y=8 }
+			position = { x=10 y=29 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
 		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_mapicon_unit_bar_str"
-			position = { x=14 y=12 }
+			position = { x=32 y=29 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
@@ -80,7 +81,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=5 y=15 }
+			position = { x=9999 y=9999 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -88,15 +89,15 @@ guiTypes = {
 		iconType = {
 			name = "large_flag"
 			spriteType = "GFX_mapicon_unit_large_flag_stripe"
-			position = { x = 4 y = 5 }
+			position = { x = 11 y = 14 }
 			alwaystransparent = yes
-			scale = 0.69
+			scale = 1
 		}
 
 		iconType = {
 			name = "attrition"
 			spriteType = "GFX_unit_attrition"
-			position = { x=-4 y=-1 }
+			position = { x=10 y=15 }
 		}
 		
 		iconType = {
@@ -108,7 +109,7 @@ guiTypes = {
 		iconType = {
 			name = "defending_area"
 			spriteType = "GFX_mapicon_unit_area_defense"
-			position = { x=-13 y=6 }
+			position = { x=4 y=3 }
 		}
 		
 		iconType = {
@@ -126,13 +127,13 @@ guiTypes = {
 		iconType ={
 			name ="onmap_digin_icon"
 			spriteType = "GFX_onmap_digin_icon"
-			position = { x=56 y=8 }
+			position = { x=43 y=16 }
 		}
 
 		iconType ={
 			name ="onmap_action_icon"
 			spriteType = "GFX_onmap_action_icon"
-			position = { x=54 y=7 }
+			position = { x=39 y=16 }
 		}
 	}
 
@@ -324,7 +325,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "air_wing_counter"
 		position = { x=0 y=0 }
-		size = { width = 58 height = 27 }
+		size = { width = 58 height = 52 }
 
 		buttonType = {
 			name = "count_bg"
@@ -336,7 +337,7 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=55 y=2 }
+			position = { x=3 y=1 }
 			alwaystransparent = yes
 		}
 		
@@ -350,8 +351,9 @@ guiTypes = {
 		iconType = {
 			name = "counter_overlay"
 			spriteType = "GFX_onmap_unit_counter_overlay"
-			position = { x=3 y=3 }
+			position = { x=14 y=12 }
 			alwaystransparent = yes
+			scale = 1.2
 		}	
 		
 		iconType = {
@@ -364,16 +366,17 @@ guiTypes = {
 		iconType = {
 			name ="wing_type"
 			spriteType = "GFX_wing_types_map"
-			position = { x=3 y=3 }
+			position = { x=15 y=17 }
 			alwaystransparent = yes
+			scale = 1.15
 			frame = 1
 		}		
 		
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=21 y=6 }
-			font = "Main_14"			
-			maxWidth = 50
+			position = { x=21 y=40 }
+			font = "Main_14_black"
+			maxWidth = 20
 			maxHeight = 14
 			format = center	
 			alwaystransparent = yes
@@ -388,15 +391,15 @@ guiTypes = {
 		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_mapicon_unit_bar_str"
-			position = { x=13 y=12 }
+			position = { x=21 y=31 }
 			alwaystransparent = yes
 			rotation = 1.5708
 		}
         
 		iconType = {
-			name = "flag"
+			name = "flag" # Flag not needed
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=4 y=15 }
+			position = { x=9999 y=9999 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -419,7 +422,7 @@ guiTypes = {
 		iconType = {
 			name = "no_mission"
 			spriteType = "GFX_mapicon_unit_no_orders"
-			position = { x=-10 y=8 }
+			position = { x=3 y=4}
 		}
 
 		iconType = {
@@ -744,7 +747,7 @@ guiTypes = {
 			position = { x = -26 y = 35 }
 			max_slots_horizontal = 1
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 58 height = 23 }
+			slotsize = { width = 58 height = 52 }
 			format = "UPPER_LEFT"
 		}
 	}

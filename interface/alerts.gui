@@ -16,15 +16,15 @@ guiTypes = {
 
 		iconType = {
 			name ="red_alert_glow"
-			spriteType = "GFX_red_alert_glow"	
-			position = { x =0 y = 0 }
+			spriteType = "GFX_red_alert_glow"
+			position = { x =6 y = 8 }
 			alwaystransparent = yes
 		}			
 
 		iconType = {
 			name ="yellow_alert_glow"
 			spriteType = "GFX_yellow_alert_glow"	
-			position = { x =0 y = 0 }
+			position = { x =6 y = 8 }
 			alwaystransparent = yes
 		}		
 		
@@ -32,7 +32,7 @@ guiTypes = {
 #		iconType = {
 #			name ="green_alert_glow"
 #			spriteType = "GFX_green_alert_glow"	
-#			position = { x =1 y = 1 }
+#			position = { x =6 y = 8 }
 #			alwaystransparent = yes
 #		}
 		
@@ -46,7 +46,7 @@ guiTypes = {
 
 	positionType = {
 		name = "alerticon_startposition"
-		position = { x = 580 y = 40 }
+		position = { x = 4 y = 59 }
 	}
 
 	positionType = {
@@ -56,7 +56,7 @@ guiTypes = {
 	
 	positionType = {
 		name = "alerticon_offset"
-		position = { x = 48 y = 44 }
+		position = { x = 35 y = 44 }
 	}
 
 	# This one is used to figure out when we nead to break and start adding icons on the next row (only x is used)
