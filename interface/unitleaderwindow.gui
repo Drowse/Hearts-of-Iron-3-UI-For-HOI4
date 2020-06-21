@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "armyleaderwindow"
 		position = { x=-225 y=-295 }
-		size = { width=550 height=590 }
+		size = { width=550 height=471 }
 		orientation = center
 		moveable = yes
 		fade_time = 500
@@ -18,9 +18,9 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "header_text"
-			position = { x = 20 y = 2 }
+			position = { x = 20 y = 17 }
 			textureFile = ""
-			font = "hoi_36header"
+			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "CHOOSE_LEADER"
 			maxWidth = 470
@@ -30,20 +30,20 @@ guiTypes = {
 
 		ButtonType = {
 			name = "sort_name"
-			position = {x=95 y=39}
+			position = {x=25 y=46}
 			spriteType = "GFX_sort_up_down_button_83x29"
 			buttonText = UNIT_LEADER_NAME_SORT
-			buttonFont = "hoi_16mbs"
+			buttonFont = "Main_14_black"
 			clicksound = click_scroll
 			frame = 1
 		}
 		
 		editBoxType = {
 			name = "leader_view_search"
-			position = { x = 201 y = 44 }
+			position = { x = 331 y = 52 }
 			size = {x=267 y=20}
 			#textureFile = ""
-			font = "hoi_20b"
+			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			text = UNIT_LEADER_SEARCH
 			#maxWidth = 300
@@ -53,16 +53,16 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "sort_skills"
-			position = {x=13 y=39}
+			position = {x=118 y=46}
 			spriteType = "GFX_sort_up_down_button_83x29"
 			buttonText = UNIT_LEADER_SKILL_SORT
-			buttonFont = "hoi_16mbs"
+			buttonFont = "Main_14_black"
 			clicksound = click_scroll
 			frame = 1
 		}
-		ButtonType = {
+		ButtonType = { # Not Needed 
 			name = "sort_capacity"
-			position = {x=440 y=39}
+			position = {x=9999 y=9999}
 			spriteType = "GFX_sort_up_down_button_83x29"
 			buttonText = UNIT_LEADER_CAPACITY_SORT
 			buttonFont = "hoi_16mbs"
@@ -72,7 +72,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sort_attack_skill"
-			position = {x=323 y=39}
+			position = {x=214 y=46}
 			spriteType = "GFX_sort_attack_trait"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_scroll
@@ -81,7 +81,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sort_defense_skill"
-			position = {x=349 y=39}
+			position = {x=240 y=46}
 			spriteType = "GFX_sort_defense_trait"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_scroll
@@ -90,7 +90,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sort_planning_skill"
-			position = {x=375 y=39}
+			position = {x=266 y=46}
 			spriteType = "GFX_sort_planning_trait"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_scroll
@@ -99,7 +99,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sort_supply_skill"
-			position = {x=401 y=39}
+			position = {x=292 y=46}
 			spriteType = "GFX_sort_supply_trait"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_scroll
@@ -108,11 +108,11 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "leaders"
-			position = { x = 0 y = 60 }
-			size = { width = 100%% height = 487 }
+			position = { x = 0 y = 73 }
+			size = { width = 100%% height = 361 }
 			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 14 bottom = 2}
-			scroll_wheel_factor = 98
+			margin = { top = 0 bottom = 0}
+			scroll_wheel_factor = 36
 			
 			background = {
 				name = "Background"		
@@ -121,9 +121,9 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "leaders_grid"
-				position = { x = 13 y = 15 }
+				position = { x = 10 y = 0 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 510 height = 98 }
+				slotsize = { width = 510 height = 36 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
 			}
@@ -196,14 +196,14 @@ guiTypes = {
 		
 		buttonType = {
 			name = "leader_button"
-			position = {x=56 y=6}	
+			position = {x=-2 y=0}	
 			quadTextureSprite ="GFX_leader_unknown"
-			scale = 0.41
+			scale = 0.17
 		}
 		
-		iconType = {
+		iconType = { # Not needed
 			name = "clip_icon"
-			position = {x=55 y=0}	
+			position = {x=9999 y=9999}	
 			quadTextureSprite ="GFX_clip"
 			alwaystransparent = yes			
 		}
@@ -216,7 +216,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "promote_btn"
-			position = {x=414 y=56}	
+			position = {x=454 y=3}	
 			quadTextureSprite ="GFX_leader_selection_button"
 			buttonText = UNIT_LEADER_PROMOTE
 			buttonFont = "hoi_16mbs"	
@@ -226,7 +226,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "traits_btn"
-			position = {x=318 y=56}	
+			position = {x=420 y=3}
 			quadTextureSprite ="GFX_leader_selection_button"
 			buttonText = UNIT_LEADER_TRAITS
 			buttonFont = "hoi_16mbs"	
@@ -235,9 +235,9 @@ guiTypes = {
 			frame = 1
 		}
 		
-		instantTextboxType = {
+		instantTextboxType = {  # Not Needed
 			name = "divisions_count"
-			position = {x=424 y=17}
+			position = {x=9999 y=9999}
 			font = "hoi_18mbs"
 			maxWidth = 85
 			maxHeight = 23
@@ -246,8 +246,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "title"
-			position = { x = 128 y = 12 }
-			font = "hoi4_typewriter16"
+			position = { x = 30 y = 5 }
+			font = "Main_14_black"
 			text = "Mr."
 			maxWidth = 150
 			maxHeight = 18
@@ -255,8 +255,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 128 y = 30 }
-			font = "hoi4_typewriter16"
+			position = { x = 30 y = 20 }
+			font = "Main_14_black"
 			text = "name"
 			maxWidth = 225
 			maxHeight = 18
@@ -264,8 +264,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "skill"
-			position = { x = 1 y = 19 }
-			font = "hoi_30header"
+			position = { x = 166 y = 11 }
+			font = "Main_14_black"
 			text = "skill"
 			maxWidth = 50
 			maxHeight = 18
@@ -275,23 +275,23 @@ guiTypes = {
 		
 		gridBoxType = {
 			name = "traits_grid"
-			position = { x = 130 y = 60 }
+			position = { x = 313 y = 8 }
 			size = { width = 450 height = 50 }
 			slotsize = { width=24 height=32 }
 			max_slots_vertical = 1			
 			format = "UPPER_LEFT"
 		}
 
-		iconType = {
+		iconType = { 
 			name = "leader_stat_attack_bg"
 			spriteType = "GFX_trait_attack"
-			position = { x=310 y=11 }
+			position = { x=206 y=0 }
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_attack"
-			position = {x=308 y=29}
-			font = "hoi_16mbs"
+			position = {x=205 y=19}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -301,13 +301,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_defense_bg"
 			spriteType = "GFX_trait_defense"
-			position = { x=337 y=10s }
+			position = { x=224 y=0 }
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_defense"
-			position = {x=335 y=29}
-			font = "hoi_16mbs"
+			position = {x=224 y=19}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -317,13 +317,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_planning_bg"
 			spriteType = "GFX_trait_planning"
-			position = { x=364 y=11 }
+			position = { x=257 y=1 }
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_planning"
-			position = {x=362 y=29}
-			font = "hoi_16mbs"
+			position = {x=256 y=19}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -333,13 +333,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_logistics_bg"
 			spriteType = "GFX_trait_logistics"
-			position = { x=390 y=11 }
+			position = { x=276 y=1 }
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_logistics"
-			position = {x=388 y=29}
-			font = "hoi_16mbs"
+			position = {x=276 y=19}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -406,9 +406,9 @@ guiTypes = {
 			clicksound = click_scroll
 		}
 
-		ButtonType = {
+		ButtonType = { # Not Needed
 			name = "sort_capacity"
-			position = {x=440 y=39}
+			position = {x=9999 y=9999}
 			spriteType = "GFX_sort_up_down_button_83x29"
 			buttonText = UNIT_LEADER_CAPACITY_SORT
 			buttonFont = "hoi_16mbs"

@@ -661,12 +661,12 @@ guiTypes = {
 			iconType = {
 				name = "army_group_header"
 				spriteType = "GFX_unit_list_header"
-				position = { x = 7 y = 7 }
+				position = { x = -36 y = 7 }
 			}
 
 			buttonType = {
 				name = "btn_delete"
-				position = { x=9 y=7 }
+				position = { x=20 y=7 }
 				spriteType = "GFX_NV_btn_delete"
 				clicksound = disband
 			}
@@ -715,8 +715,8 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "selected_division_count"
-				position = {x=75 y=13}
-				font = "hoi_18mbs"
+				position = {x=4 y=13}
+				font = "hoi4_typewriter16"
 				maxWidth = 130
 				maxHeight = 23
 				format = left
