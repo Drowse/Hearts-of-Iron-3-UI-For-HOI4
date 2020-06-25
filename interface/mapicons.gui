@@ -97,7 +97,7 @@ guiTypes = {
 		iconType = {
 			name = "attrition"
 			spriteType = "GFX_unit_attrition"
-			position = { x=10 y=115 }
+			position = { x=-20 y=115 }
 		}
 		
 		iconType = {
