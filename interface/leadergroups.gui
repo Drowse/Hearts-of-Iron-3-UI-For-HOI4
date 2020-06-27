@@ -56,19 +56,19 @@ guiTypes = {
 		
 		iconType = { 
 			name = "army_group_bg"
-			position = {x=-1 y=-46}
+			position = {x=-1 y=-30}
 			spriteType = "GFX_LG_army_group_bg"
 		}
 
 		iconType = { 
 			name = "army_mid_bg"
-			position = {x=1 y=-46}
+			position = {x=1 y=-30}
 			spriteType = "GFX_LG_army_mid_bg"
 		}
 
 		iconType = { 
 			name = "army_end_bg"
-			position = {x=1 y=-46}
+			position = {x=1 y=-30}
 			spriteType = "GFX_LG_army_end_bg"
 		}
 	}
@@ -96,10 +96,10 @@ guiTypes = {
 		
 		iconType = {
 			name = "leader_icon"
-			position = {x=8 y=-5}	
+			position = {x=4 y=21 }	
 			quadTextureSprite ="GFX_leader_unknown"
 			alwaystransparent = yes
-			scale = 0.39
+			scale = 0.13
 		}
 
 		iconType = {
@@ -111,7 +111,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "leader_frame"
-			position = {x=-1 y=-12}
+			position = {x=-2 y=-20}
 			spriteType = "GFX_LG_group_frame"
 		}
 		
@@ -125,7 +125,7 @@ guiTypes = {
 		ButtonType = {
 			name ="disband_leader_btn"
 			spriteType = "GFX_LG_disband_group_btn"	
-			position = {x=62 y=-7}
+			position = {x=5 y=66}
 			clicksound = disband
 		}
 		
@@ -138,18 +138,18 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "divisions_count"
-			position = {x=0 y=75}
-			font = "hoi_18mbs"
+			position = {x=0 y=35}
+			font = "Main_14_black"
 			maxWidth = 80
 			maxHeight = 23
 			format = centre
 			text = "-"
 		}
 		
-		iconType = {
+		iconType = { # Not Needed
 			name ="small_button_bg"
 			spriteType = "GFX_execute_stop_small_bg"
-			position = { x= 4 y = -34 }
+			position = { x=9999 y=9999 }
 		}
 
 		iconType = {
@@ -209,14 +209,14 @@ guiTypes = {
 		iconType = {
 			name = "plan_unit_power_bar"
 			spriteType = "GFX_plan_unit_power"
-			position = { x=9 y=92 }	
+			position = { x=9 y=7 }	
 			#alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "plan_frame"
 			spriteType = "GFX_plan_frame"
-			position = { x=6 y=92 }	
+			position = { x=6 y=52 }	
 			alwaystransparent = yes
 		}		
 		
@@ -314,8 +314,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "army_group_portrait_window"
-		position = { x=-5 y=-5 }
-		size = { width=80 height=107 }
+		position = { x=-5 y=-50 }
+		size = { width=78 height=107 }
 		Orientation = upper_left
 
 		ButtonType = {
@@ -335,10 +335,10 @@ guiTypes = {
 		
 		iconType = {
 			name = "leader_icon"
-			position = {x=8 y=-15}	
+			position = {x=6 y=21}	
 			quadTextureSprite ="GFX_leader_marshal_unknown"
 			alwaystransparent = yes
-			scale = 0.45
+			scale = 0.13
 		}
 
 		iconType = {
@@ -377,18 +377,18 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "divisions_count"
-			position = {x=4 y=75}
-			font = "hoi_18mbs"
+			position = {x=-3 y=35}
+			font = "Main_14_black"
 			maxWidth = 80
 			maxHeight = 23
 			format = centre
 			text = "-"
 		}
 
-		iconType = {
+		iconType = { # Not Needed
 			name ="small_button_bg"
 			spriteType = "GFX_execute_stop_small_bg"
-			position = { x= 8 y = -44 }
+			position = { x=9999  y =9999 }
 		}
 		
 		buttonType = {
@@ -434,14 +434,14 @@ guiTypes = {
 		iconType = {
 			name = "plan_unit_power_bar"
 			spriteType = "GFX_plan_unit_power"
-			position = { x=15 y=92 }	
+			position = { x=15 y=7 }	
 			#alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "plan_frame"
 			spriteType = "GFX_plan_frame"
-			position = { x=12 y=92 }	
+			position = { x=12 y=52 }	
 			alwaystransparent = yes
 		}		
 		
@@ -503,7 +503,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "expand"
-			position = {x=73 y=-15}
+			position = {x=44 y=-15}
 			quadTextureSprite = "GFX_LG_expand_group_btn"
 			font = "hoi_16mbs"
 			frame = 2

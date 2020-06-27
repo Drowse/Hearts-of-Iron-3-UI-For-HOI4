@@ -28,3 +28,11 @@ spriteTypes = {
 		name = "GFX_strategic_resource_tungsten_small"
 		texturefile = "gfx/topbar_resources/strategic_resource_tungsten_small.dds"
 	}
+	
+	#New Stuff
+	
+	spriteType = {
+		name = "GFX_bp_background"
+		texturefile = "gfx/HOI3UI/bp_background.dds"
+	}	
+}
