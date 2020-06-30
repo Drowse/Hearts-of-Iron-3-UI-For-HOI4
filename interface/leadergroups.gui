@@ -209,7 +209,7 @@ guiTypes = {
 		iconType = {
 			name = "plan_unit_power_bar"
 			spriteType = "GFX_plan_unit_power"
-			position = { x=9 y=7 }	
+			position = { x=9 y=52 }	
 			#alwaystransparent = yes
 		}
 
@@ -434,7 +434,7 @@ guiTypes = {
 		iconType = {
 			name = "plan_unit_power_bar"
 			spriteType = "GFX_plan_unit_power"
-			position = { x=15 y=7 }	
+			position = { x=15 y=52 }	
 			#alwaystransparent = yes
 		}
 

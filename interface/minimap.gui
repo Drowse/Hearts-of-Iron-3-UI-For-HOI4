@@ -18,7 +18,7 @@ guiTypes = {
 
 	containerWindowType =  {
 		name = "mini_map_interface"
-		position = { x=-343 y=-98 }	
+		position = { x=-363 y=-132 }	
 		Orientation = LOWER_RIGHT
 
 		
@@ -115,7 +115,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "handle"
-			position = {x=-22 y=47}
+			position = {x=-22 y=75}
 			spriteType = "GFX_minimap_handle_default"
 			scale = 0.8
 			shortcut = "ctrl+m"
@@ -139,14 +139,14 @@ guiTypes = {
 		
 		buttonType = {
 			name = "offensive_ping"
-			position = {x=4 y=44}
+			position = {x=4 y=74}
 			spriteType = "GFX_minimap_offensive_ping_btn"
 			scale = 0.8
 		}
 		
 		buttonType = {
 			name = "defensive_ping"
-			position = {x=4 y=69}
+			position = {x=4 y=99}
 			spriteType = "GFX_minimap_defensive_ping_btn"
 			scale = 0.8
 		}
