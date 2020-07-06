@@ -122,7 +122,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="pol_power"
-			position = { x= 883 y = 5 }
+			position = { x= 885 y = 5 }
 			font = "Arial12"
 			text = "999"
 			format = center
@@ -166,13 +166,13 @@ guiTypes = {
 		iconType ={
 			name ="stability_icon"
 			spriteType = "GFX_stability_icon"
-			position = { x= 914 y = 0 }
+			position = { x= 920 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="stability"
-			position = { x= 904 y = 6 }
+			position = { x= 912 y = 6 }
 			font = "Arial12"
 			text = "100%"
 			format = right
@@ -191,13 +191,13 @@ guiTypes = {
 		iconType ={
 			name ="war_support_icon"
 			spriteType = "GFX_war_support_icon"
-			position = { x= 956 y = 1 }
+			position = { x= 968 y = 1 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="war_support"
-			position = { x= 942 y = 6 }
+			position = { x= 955 y = 6 }
 			font = "Arial12"
 			text = "100%"
 			format = right
@@ -557,61 +557,61 @@ guiTypes = {
 
 		buttonType = {
 			name = "menu_button"
-			position = { x = -35 y = 7 }
+			position = { x = 1265 y = 2 }
 			quadTextureSprite ="GFX_menu_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok
 			oversound = ui_menu_over
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "MAIN_MENU"
 		}
 		
 		buttonType = {
 			name = "help_button"
-			position = { x = -29 y = 34 }
+			position = { x = 1240 y = 2 }
 			quadTextureSprite ="GFX_help_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok
 			oversound = ui_menu_over
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "HELP_MENU"
 			web_link = ""
 		}
 
 		buttonType = {
 			name = "achievements_button"
-			position = { x = -131 y = 62 }
+			position = { x = 1210 y = 2 }
 			quadTextureSprite ="GFX_achievements_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok
 			oversound = ui_menu_over
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 		}
 		
 		buttonType = {
 			name = "playlist_button"
-			position = { x = -311 y = 46 }
+			position = { x = 1172 y = -2 }
 			quadTextureSprite ="GFX_playlist_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok
 			oversound = ui_menu_over
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "MUSICPLAYER_TOGGLE_CONTROLLER"
 		}		
 		
 		buttonType = {
 			name = "dismissed_alerts_button"
-			position = { x = -35 y = 62 }
+			position = { x = 1145 y = 2 }
 			quadTextureSprite ="GFX_show_dismissed_alerts_icon"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok
 			oversound = ui_menu_over
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 		}
 		
 		containerWindowType = {
@@ -890,9 +890,9 @@ guiTypes = {
 			
 			buttonType = {
 				name = "army_button"
-				position = { x = -275 y = 8 }
+				position = { x = 944 y = -11 }
 				quadTextureSprite ="GFX_armyoverview_button"
-				Orientation = "UPPER_right"
+				Orientation = "UPPER_left"
 				shortcut = "o"
 				clicksound = click_close
 				oversound = ui_menu_over
@@ -900,9 +900,9 @@ guiTypes = {
 			
 			buttonType = {
 				name = "navy_button"
-				position = { x = -226 y = 8 }
+				position = { x = 994 y = -11 }
 				quadTextureSprite ="GFX_navyoverview_button"
-				Orientation = "UPPER_right"
+				Orientation = "UPPER_left"
 				shortcut = "p"
 				clicksound = click_close
 				oversound = ui_menu_over
@@ -910,9 +910,9 @@ guiTypes = {
 			
 			buttonType = {
 				name = "air_button"
-				position = { x = -180 y = 8 }
+				position = { x = 1044 y = -11 }
 				quadTextureSprite ="GFX_airoverview_button"
-				Orientation = "UPPER_right"
+				Orientation = "UPPER_left"
 				shortcut = "l"
 				clicksound = click_close
 				oversound = ui_menu_over

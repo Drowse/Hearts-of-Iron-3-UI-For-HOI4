@@ -2,12 +2,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrydiplomacyview"
-		position = { x=-606 y=78}	
-		show_position = { x=-6 y =78 }
+		position = { x=-550 y=-400}	
+		show_position = { x=-550 y =-400 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300	
-		size = { width=550 height=100%% }
+		animation_time = 1
+		size = { width=1040 height=770 }
+		moveable = yes
+		Orientation = center
 		verticalScrollbar = "right_vertical_slider"
 		#horizontalScrollbar = "bottom_horizontal_slider"
 		
@@ -16,8 +18,14 @@ guiTypes = {
 		
 		background = {
 			name = "Background"		
-			spriteType ="GFX_tiled_bg"
+			spriteType ="GFX_tiled_plain_bg"
 		}
+		
+		iconType ={
+			name ="diplo_filter_area_bg"
+			spriteType = "GFX_diplo_filter_area_bg"
+			position = { x= 9 y = 0 }
+		}		
 		
 		containerWindowType = {
 			name = "country_info"
@@ -728,9 +736,9 @@ guiTypes = {
 			}
 		}
 
-		iconType ={
+		iconType ={ # Not Needed
 			name ="production_header_bg"
-			spriteType = "GFX_header_bg"
+			#spriteType = "GFX_header_bg"
 			position = { x= 5 y = 07 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -772,7 +780,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "diplomacy_title"
-			position = { x = 45 y = 8 }
+			position = { x = 820 y = 63 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -789,27 +797,27 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "top_filter_window"
-				position = { x = 3 y = -10 }	
-				size = { width = 545 height = 135 }
-				verticalScrollbar = "right_vertical_slider"
-				margin = { top = 14 bottom = 14 }
+				position = { x = 3 y = 4 }	
+				size = { width = 545 height = 200 }
+				#verticalScrollbar = "right_vertical_slider"
+				#margin = { top = 14 bottom = 14 }
 			
-				background = {
+				background = { #Not Needed
 					name = "Background"
-					spriteType ="GFX_tiled_bg"
+					#spriteType ="GFX_tiled_bg"
 				}
 
-				iconType ={
+				iconType ={ # Not Needed
 					name ="diplo_filter_area_bg"
 					spriteType = "GFX_diplo_filter_area_bg"
-					position = { x= 15 y = 0 }
+					position = { x= 9999 y = 9999 }
 				}
 				
 				gridboxtype = {
 					name = "filters_grid"
-					position = { x = 105 y = 1 }
+					position = { x = 18 y = 66 }
 					size = { width = 100%% height = 100%% }
-					slotsize = { width = 105 height = 35 }
+					slotsize = { width = 100 height = 20 }
 					max_slots_horizontal = 4
 					format = "UPPER_LEFT"
 				}
@@ -817,13 +825,13 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "filters"
-				position = { x = 3 y = 125 }	
+				position = { x = 3 y = 160 }	
 				size = { width = 542 height = 35 }
 				clipping = no
 			
-				background = {
+				background = { Not Needed
 					name = "Background"
-					spriteType ="GFX_diplo_countrylist_binding"
+					#spriteType ="GFX_diplo_countrylist_binding"
 				}
 				
 				buttonType = {
@@ -861,14 +869,14 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "countries"
-				position = { x = 0 y = 155 }	
+				position = { x = 2 y = 178 }	
 				size = { width = 545 height = -5 }
-				margin = { top = 8 bottom = 8 }
+				margin = { top = 14 bottom = 12 }
 				verticalScrollbar = "right_vertical_slider"
 		
 				background = {
 					name = "Background"
-					spriteType ="GFX_tiled_window_1b_thin_border"
+					#spriteType ="GFX_tiled_window_1b_thin_border"
 				}
 				
 				gridboxtype = {
@@ -3775,7 +3783,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 0 y = 6 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			text = "filter"
 			maxWidth = 100
 			maxHeight = 20

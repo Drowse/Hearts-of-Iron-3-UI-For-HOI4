@@ -113,7 +113,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "armies_count_box"
 			position = { x = 10 y = 10 }
-			font = "hoi_18mbs"
+			font = "Arial12"
 			maxWidth = 28
 			maxHeight = 23
 			fixedsize = yes
@@ -198,7 +198,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "theater_group_item"
-		position = { x=430 y=0 }
+		position = { x=536 y=0 }
 		size = { width=300 height=80 }
 
 		#gridBoxType = {
@@ -226,20 +226,20 @@ guiTypes = {
 		
  		buttonType = {
 			name = "assign_button"
-			position = { x = 3 y= 38 }
+			position = { x = 1 y= 31 }
 			spriteType = "GFX_assign_group_button"
 		}
 		
 		buttonType = {
 			name = "settings_button"
-			position = { x=9 y=11 }	
+			position = { x=197 y=0 }	
 			spriteType = "GFX_theater_group_settings_btn"
 		}
 				
 		instantTextBoxType = {
 			name = "armies_count_box"
-			position = { x = 256 y = 46 }
-			font = "hoi_18mbs"
+			position = { x = -20 y = 6 }
+			font = "Arial12"
 			maxWidth = 40
 			maxHeight = 32
 			fixedsize = yes
@@ -248,19 +248,19 @@ guiTypes = {
 
 		editBoxType = {
 			name = "name_box"
-			position = { x = 38 y = 13 }
-			font = "hoi_18mbs"
-			size = { x=170 y=32 }
+			position = { x = 8 y = 18 }
+			font = "Arial12"
+			size = { x=200 y=32 }
 			text = "NEW_THEATER_GROUP"
 		}
 
 		OverlappingElementsBoxType = {
 			name = "orders_group_box"
 			first_on_top = yes
-			position = { x = 10 y = 43 }
+			position = { x = 2 y = 24 }
 			size = { x = 260 y = 23 }
 			format = left
-			spacing = 8.0
+			spacing = 1.0
 		}
 		
 		OverlappingElementsBoxType = {
@@ -275,9 +275,9 @@ guiTypes = {
 		buttonType = {
 			name ="attack_combat_btn"
 			spriteType = "GFX_theatre_battle_indicator"
-			position = { x = 232 y = 13 }
+			position = { x = 130 y = 0 }
 			frame = 1
-			scale= 0.9
+			scale= 0.7
 		}
 		
 		instantTextBoxType = {
@@ -295,16 +295,16 @@ guiTypes = {
 		buttonType = {
 			name ="combat_logs_btn"
 			spriteType = "GFX_theatre_combat_log_icon"
-			position = { x = 209 y = 5 }
-			scale = 0.9
+			position = { x=-25 y = 5 }
+			scale = 1
 		}
 		
 		buttonType = {
 			name ="defence_combat_btn"
 			spriteType = "GFX_theatre_battle_indicator"
-			position = { x = 269 y = 13 }
+			position = { x = 155 y = 0 }
 			frame = 2
-			scale = 0.9
+			scale = 0.7
 		}
 		
 		instantTextBoxType = {
@@ -557,7 +557,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name ="name"
 			position = { x = 118 y = 14 }
-			font = "hoi_18mbs"
+			font = "Arial12"
 			text = "100%"
 			format = left
 			maxWidth = 155
@@ -735,26 +735,26 @@ guiTypes = {
 	containerWindowType = {
 		name = "army_group_box"
 		position = { x=0 y=0 }
-		size = { width=23 height=33 }
+		size = { width=23 height=15 }
 		
 		buttonType = {
 			name = "army_group_box_middle_bg"
 			quadTextureSprite = "GFX_theatre_dropdown_middle"	
-			position = { x = 0 y = -8 }
+			position = { x = 0 y = -33 }
 		}
 
 		buttonType = {
 			name = "army_group_box_bottom_bg"
 			quadTextureSprite = "GFX_theatre_dropdown_bottom"	
-			position = { x = 0 y = -8 }
+			position = { x = 0 y = -32 }
 		}
 
 		OverlappingElementsBoxType = {
 			name = "armies_box"
-			position = { x = 10 y = -6 }
-			size = { x = 260 y = 23 }
+			position = { x = 2 y = -40 }
+			size = { x = 250 y = 23 }
 			format = left
-			spacing = 8.0
+			spacing = 1.0
 		}
 	}
 
