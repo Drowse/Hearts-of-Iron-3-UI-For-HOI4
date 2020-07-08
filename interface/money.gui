@@ -187,7 +187,33 @@ guiTypes = {
 			fixedsize = yes
 			
 			#pdx_tooltip = "CHROMIUM_TEXT_TIP"   
-		}	
+		}
+		gridboxtype = {
+			name = "grid_example"
+			position = { x = 100 y = 100 }
+			size = { width = 442 height = 100%% }
+			slotsize = { width = 442 height = 1 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+ 
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 100 y = 100 }
+			font = "hoi_18mbs"
+			text = "[?this.GetName]"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+	 
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 100 y = 100}
+			Orientation = "UPPER_LEFT"
+		}		
 	}
 
 }

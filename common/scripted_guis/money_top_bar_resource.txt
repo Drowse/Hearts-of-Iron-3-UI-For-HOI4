@@ -21,7 +21,40 @@ scripted_gui = {
            }
 			}
 		}
+		
+		dynamic_lists = {
+			grid_example = {
+				array = grid_array
+				entry_container = grid_entry
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
 	}
+	
+	flag = {
+		window_name = "grid_container"
+		#context_type = player_context
+		#parent_window_token = top_bar
+		visible = {
+            always=yes
+		}	
+		dynamic_lists = {
+			grid_example = {
+				array = grid_array
+				entry_container = grid_entry
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
     
 }
 
