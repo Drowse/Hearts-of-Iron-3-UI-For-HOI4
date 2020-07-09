@@ -1,0 +1,23 @@
+calculate_state_cost = {
+	set_temp_variable = { cost = industrial_complex_level }
+	multiply_temp_variable = { cost = 10 }
+	add_to_temp_variable = { cost = 10 }
+	
+	if = {
+		limit = { check_variable = { cost < ROOT.political_power } }
+		set_temp_variable = { button_buy_frame = 4 }
+		else = {							
+			set_temp_variable = { button_buy_frame = 1 }
+		}
+	}
+}
+
+test = {
+	GER = {
+		any_neighbor_country = {
+			tag = CHI
+		}
+	
+	}
+
+}

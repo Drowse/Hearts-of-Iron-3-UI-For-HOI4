@@ -1,0 +1,13 @@
+on_actions = {
+	# country 
+	on_daily = {
+		effect = {
+			every_other_country = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_array = { ROOT.fascist_grid = THIS }
+			}
+		}
+	}
+}

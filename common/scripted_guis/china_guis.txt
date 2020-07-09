@@ -1,0 +1,152 @@
+scripted_gui = {
+
+	china_open_faction_alignment = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "china_open_faction_alignment_container"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			button_open_click_enabled = {
+				NOT = { has_country_flag = alignment_window_open }
+			}
+		}
+
+		effects = {
+			button_open_click = {
+				every_country = { # Democratic nation grid
+					limit = {
+						has_government = democratic 
+						#num_of_factories > 4
+					}
+					add_to_array = { ROOT.democratic_alignment_array = THIS }
+				}				
+				
+				every_country = { # Fascist nation grid
+					limit = {
+						has_government = fascism
+					}
+					add_to_array = { ROOT.fascism_alignment_array = THIS }
+				}
+				
+				every_country = { # Communist nation grid
+					limit = {
+						has_government = communism 
+					}
+					add_to_array = { ROOT.communism_alignment_array = THIS }
+				}				
+				every_country = { # neutral nation grid
+					limit = {
+						has_government = neutrality 
+						#num_of_factories > 4
+					}
+					add_to_array = { ROOT.neutrality_alignment_array = THIS }
+				}
+
+				every_country = { # Allies Grid
+					limit = {
+						is_in_faction_with = ENG
+					}
+					add_to_array = { ROOT.ENG_ally_array = THIS }
+				}
+				
+				every_country = { # Axis Grid
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_to_array = { ROOT.GER_ally_array = THIS }
+				}
+
+				every_country = { # Commie Grid
+					limit = {
+						is_in_faction_with = SOV
+					}
+					add_to_array = { ROOT.SOV_ally_array = THIS }
+				}				
+				
+				set_country_flag = alignment_window_open
+			}
+		}
+	}
+
+	HOI3_democratic_alignment = {
+		context_type = player_context
+		window_name = "faction_alignment_window"
+
+		visible = {
+			has_country_flag = alignment_window_open
+		}
+
+		dynamic_lists = {
+			KR_china_tags_grid = {
+				array = democratic_alignment_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry
+			}
+			
+			KR_china_tags_grid1 = {
+				array = fascism_alignment_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry
+			}	
+
+			KR_china_tags_grid2 = {
+				array = communism_alignment_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry
+			}	
+
+
+			KR_china_tags_grid3 = {
+				array = neutrality_alignment_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry
+			}	
+
+			KR_china_tags_grid4 = {
+				array = ENG_ally_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry1
+			}			
+			KR_china_tags_grid5 = {
+				array = GER_ally_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry1
+			}				
+			KR_china_tags_grid6 = {
+				array = SOV_ally_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry1
+			}				
+		}
+
+		effects = {
+			button_close_click = {
+				clear_array = democratic_alignment_array
+				clear_array = fascism_alignment_array
+				clear_array = communism_alignment_array
+				clear_array = neutrality_alignment_array
+				clear_array = ENG_ally_array
+				clear_array = GER_ally_array
+				clear_array = SOV_ally_array
+				clr_country_flag = alignment_window_open
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+	}
+}

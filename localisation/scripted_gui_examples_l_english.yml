@@ -1,0 +1,19 @@
+﻿l_english:
+ SCOPE_TEXT:0 "[scope_text]"
+ SCOPE_TEXT_WITH_ARRAY:0 "[scope_text_with_array]"
+ NEWLINE:0 "\n"
+ example_1_tooltip:0 "Create a scripted gui that is always visible. Attach effects and triggers to simple gui elements. Shows example of scripted localization for text boxes"
+ example_2_tooltip:0 "Create a scripted gui that is visible when you select a state. Shows how scoping works."
+ example_3_tooltip:0 "Attach a scripted GUI to an existing game GUI. Change frame or position of icons using variables"
+ example_4_tooltip:0 "Another example for attaching scripted GUIs, this time it targets another country"
+ example_5_tooltip:0 "A simple AI example"
+ example_6_tooltip:0 "A more complicated AI example"
+ example_7_tooltip:0 "A scripted GUI with a dynamic list that is populated by an array."
+ example_8_tooltip:0 "A more advanced scripted GUI with AI and more functionality."
+ example_9_tooltip:0 "A scripted with two dynamic lists in it. Also shows example of putting flags and sharing temp variables."
+ example_5_text:0 "This scripted GUI has an AI attached to it. To see how it works out, enable 'human_ai' through the console.\n\nHere you have three variables a, b, c. AI will click 'Add' buttons to increase every variable until it is 10. Lower the variable, higher the priority for AI. If priorities all same, AI will pick at random"
+ example_6_text:0 "A more complicated AI example that is only enabled for GER. Switch to GER and enable human_ai. This GUI has two buttons capture & nuke. Capture is only enabled for neighbour countries and captures a neighbour state. Nuke is always enabled and will nuke a random state.\n\nAI will trigger on every day and will roll random. For 25% it will capture a random state. For other 75% it will nuke 3 random countries.\n\nCheck scripted_ai.log under log folder for details."
+ example_7_text:0 "This is a scripted gui that shows a dynamic list/grid examples. Add button adds a random country to an array that is used for populating the list.\n\nEach element has two buttons that lets you take or give pp to the country in the grid. X button can be used for removing that country from the list."
+ example_8_text:0 "Another example for scripted GUIs with lists. This one has selected country context and only visible for your subjects. Unlike previous one, this one is populated by an array that already exists in the game, owned_states of your subject. It also uses a scripted loc for list entries, which filters out states that has no building. You can buy the state from your puppet by paying pp cost.\n\nIt also includes an AI that will buy the state with highest building levels. Enable "human_ai" in console (and disable other ais by "ai") to test.
+ example_9_text:0 "This is a scripted gui that an example of grids inside other grids. Add button adds a random country to an array that is used for populating top level grid. Each element in this top level grid also has a grid box that has a dynamic grid box that is populated by state array of the current country.\n\nButtons for each state can be used for for buying a state by paying a pp cost that scales up with civ factories.\n\nThis example also shows how flags can be put in a scripted gui and how temporary variables can be shared in-between triggers & localization."
+ state_cost:0 "PP cost to buy : [?cost]"  # this temp variable is calculated in button_buy_click_enabled

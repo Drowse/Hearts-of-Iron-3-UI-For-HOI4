@@ -1,0 +1,240 @@
+@army_reform_x_pos = -2
+@army_reform_y_pos = -48
+
+guiTypes = {
+	containerWindowType =  {
+		name = "china_open_faction_alignment_container"
+		position = { x = 82 y = 425 }
+		orientation = upper_left
+
+		buttonType = {
+			name = "button_open"
+			position = { x = 17 y = 0 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Chinese Factions"
+		}
+	}
+	
+	containerWindowType = {
+		name = "faction_alignment_window"
+		position = { x = -250 y = -250 }
+		size = { width = 520 height = 775 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+
+		orientation = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = { x = 15 y = 8 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Alignment Chart"
+			maxWidth = 300
+			maxHeight = 20
+			format = left	
+		}
+
+		buttonType = {
+			name = "button_close"
+			position = {x = 440 y = 12 }
+			spriteType = "GFX_NV_btn_close"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+
+		containerWindowType = {
+			name = "faction_alignment_container"
+			position = {x = 10 y = 300}
+			size = {width = 460 height = 540 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			iconType ={
+				name ="diplo_filter_area_bg"
+				spriteType = "GFX_diplo_upper_win_bg"
+				position = { x= -0 y = -305 }
+				alwaystransparent = yes
+			}
+
+			gridboxtype = {
+				name = "KR_china_tags_grid"
+				position = { x = 44 y = 80 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 6
+			}		
+			
+			gridboxtype = {
+				name = "KR_china_tags_grid1"
+				position = { x = 167 y = 330 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 6
+			}	
+
+			gridboxtype = {
+				name = "KR_china_tags_grid2"
+				position = { x = -80 y = 330 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 6
+			}
+
+			gridboxtype = {
+				name = "KR_china_tags_grid3"
+				position = { x = 8 y = 213 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 8
+				max_slots_vertical = 6
+			}
+
+			gridboxtype = {
+				name = "KR_china_tags_grid4"
+				position = { x = -90 y = -138 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 30 height = 18 }
+				max_slots_horizontal = 20
+				max_slots_vertical = 1
+				format = left
+			}	
+
+			gridboxtype = {
+				name = "KR_china_tags_grid5"
+				position = { x = -90 y = -197 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 30 height = 18 }
+				max_slots_horizontal = 20
+				max_slots_vertical = 1
+				format = left
+			}				
+			
+			gridboxtype = {
+				name = "KR_china_tags_grid6"
+				position = { x = -90 y = -78}
+				size = { width = 100 height = 100 }
+				slotsize = { width = 30 height = 18 }
+				max_slots_horizontal = 20
+				max_slots_vertical = 1
+				format = left
+			}			
+		}
+	}
+	
+	# this entry will be used to populate the country_grid above
+	containerWindowType = {
+		name = "KR_china_tag_entry"
+		position = { x = -200 y = 0}	
+		size = { width = 422 height = 100 }
+		
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_flag_smallest"
+			position = { x = 305 y = 20 }
+			Orientation = upper_left
+			pdx_tooltip = "[This.GetName]"
+		}
+	}
+	
+	containerWindowType = {
+		name = "KR_china_tag_entry1"
+		position = { x = -200 y = 0}	
+		size = { width = 422 height = 100 }
+		
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x = 305 y = 20 }
+			Orientation = upper_left
+			pdx_tooltip = "[This.GetName]"
+		}
+	}
+
+	containerWindowType = {
+		name = "china_army_reform_button"
+		position = {x=0 y=0}
+		size = { width=20 height=20 }
+
+		iconType = {
+			name = "china_army_reform_level_one_icon"
+			quadTextureSprite = "GFX_army_reform_level"
+			frame = 1
+			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
+
+			pdx_tooltip = "china_army_reform_idea"
+			pdx_tooltip_delayed = "china_army_reform_idea_desc"
+		}
+
+		iconType = {
+			name = "china_army_reform_level_two_icon"
+			quadTextureSprite = "GFX_army_reform_level"
+			frame = 2
+			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
+
+			pdx_tooltip = "china_army_reform_idea"
+			pdx_tooltip_delayed = "china_army_reform_idea_desc"
+		}
+
+		iconType = {
+			name = "china_army_reform_level_three_icon"
+			quadTextureSprite = "GFX_army_reform_level"
+			frame = 3
+			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
+
+			pdx_tooltip = "china_army_reform_idea"
+			pdx_tooltip_delayed = "china_army_reform_idea_desc"
+		}
+
+		iconType = {
+			name = "china_army_reform_level_four_icon"
+			quadTextureSprite = "GFX_army_reform_level"
+			frame = 4
+			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
+
+			pdx_tooltip = "china_army_reform_idea"
+			pdx_tooltip_delayed = "china_army_reform_idea_desc"
+		}
+
+		iconType = {
+			name = "china_army_reform_level_five_icon"
+			quadTextureSprite = "GFX_army_reform_level"
+			frame = 5
+			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
+
+			pdx_tooltip = "china_army_reform_idea"
+			pdx_tooltip_delayed = "china_army_reform_idea_desc"
+		}
+	}
+
+	containerWindowType = {
+		name = "FNG_japanese_tensions_container"
+		position = { x=0 y=20 }
+		size = { width=20 height=20 }
+
+		iconType = {
+			name = "FNG_japanese_tensions_icon"
+			spriteType = "GFX_FNG_japanese_tensions_level"
+			position = { x= -2 y = -28 }
+
+			pdx_tooltip = FNG_japanese_tensions_tooltip
+			pdx_tooltip_delayed = FNG_japanese_tensions_tooltip_long
+		}
+	}
+}
