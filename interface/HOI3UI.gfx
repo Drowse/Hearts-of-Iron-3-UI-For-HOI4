@@ -34,5 +34,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_bp_background"
 		texturefile = "gfx/HOI3UI/bp_background.dds"
-	}	
+	}
+	
+	spriteType = {
+		name = "GFX_hoi3_allies"
+		texturefile = "gfx/HOI3UI/hoi3_allies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hoi3_axis"
+		texturefile = "gfx/HOI3UI/hoi3_axis.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hoi3_comintern"
+		texturefile = "gfx/HOI3UI/hoi3_comintern.dds"
+	}
 }

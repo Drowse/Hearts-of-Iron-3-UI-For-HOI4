@@ -69,6 +69,74 @@ guiTypes = {
 				position = { x= -0 y = -305 }
 				alwaystransparent = yes
 			}
+			
+			instantTextboxType = {
+				name = "allies_title"
+				position = { x = 37 y = -128 }
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "Allies"
+				maxWidth = 300
+				maxHeight = 20
+				format = upper_left	
+			}			
+			
+			iconType ={
+				name ="hoi3_allies"
+				spriteType = "GFX_hoi3_allies"
+				position = { x= 30 y = -116 }
+				alwaystransparent = yes
+				Orientation = upper_left
+			}
+			
+			instantTextboxType = {
+				name = "axis_title"
+				position = { x = 39 y = -186 }
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "Axis"
+				maxWidth = 300
+				maxHeight = 20
+				format = upper_left	
+			}			
+
+			iconType ={
+				name ="hoi3_axis"
+				spriteType = "GFX_hoi3_axis"
+				position = { x= 30 y = -173 }
+				alwaystransparent = yes
+				Orientation = upper_left
+			}
+			
+			instantTextboxType = {
+				name = "comintern_title"
+				position = { x = 26 y = -68 }
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "Comintern"
+				maxWidth = 300
+				maxHeight = 20
+				format = upper_left	
+			}				
+
+			iconType ={
+				name ="hoi3_comintern"
+				spriteType = "GFX_hoi3_comintern"
+				position = { x= 30 y = -55 }
+				alwaystransparent = yes
+				Orientation = upper_left
+			}
+
+			instantTextboxType = {
+				name = "factions_list"
+				position = { x = 373 y =-2 }
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "Factions"
+				maxWidth = 300
+				maxHeight = 20
+				format = upper_left	
+			}			
 
 			gridboxtype = {
 				name = "KR_china_tags_grid"
@@ -108,7 +176,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "KR_china_tags_grid4"
-				position = { x = -90 y = -138 }
+				position = { x = -70 y = -138 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 30 height = 18 }
 				max_slots_horizontal = 20
@@ -118,7 +186,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "KR_china_tags_grid5"
-				position = { x = -90 y = -197 }
+				position = { x = -70 y = -197 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 30 height = 18 }
 				max_slots_horizontal = 20
@@ -128,12 +196,76 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "KR_china_tags_grid6"
-				position = { x = -90 y = -78}
+				position = { x = -70 y = -78}
 				size = { width = 100 height = 100 }
 				slotsize = { width = 30 height = 18 }
 				max_slots_horizontal = 20
 				max_slots_vertical = 1
 				format = left
+			}	
+
+			gridboxtype = {
+				name = "KR_china_tags_grid7"
+				position = { x = 195 y = -5}
+				size = { width = 100 height = 100 }
+				slotsize = { width = 85 height = 18 }
+				max_slots_horizontal = 2
+				max_slots_vertical = 5
+				
+				format = left
+			}	
+			gridboxtype = {
+				name = "KR_china_tags_grid8"
+				position = { x = -36 y = 200 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 2
+				max_slots_vertical = 4
+			}		
+			gridboxtype = {
+				name = "KR_china_tags_grid9"
+				position = { x = 8 y = 185 }
+				size = { width = 265 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 8
+				max_slots_vertical = 2
+				format = center
+			}			
+			gridboxtype = {
+				name = "KR_china_tags_grid10"
+				position = { x = 120 y = 200 }
+				size = { width = 265 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 2
+				max_slots_vertical = 4
+				format = center
+			}		
+			gridboxtype = {
+				name = "KR_china_tags_grid11"
+				position = { x = -100 y = 300 }
+				size = { width = 215 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 8
+				max_slots_vertical = 2
+				format = center
+			}		
+			gridboxtype = {
+				name = "KR_china_tags_grid12"
+				position = { x = 8 y = 330 }
+				size = { width = 215 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 8
+				max_slots_vertical = 2
+				format = center
+			}
+			gridboxtype = {
+				name = "KR_china_tags_grid13"
+				position = { x = 70 y = 295 }
+				size = { width = 215 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 7
+				max_slots_vertical = 2
+				format = center
 			}			
 		}
 	}
@@ -144,13 +276,14 @@ guiTypes = {
 		position = { x = -200 y = 0}	
 		size = { width = 422 height = 100 }
 		
-		buttonType = {
+		iconType = {
 			name = "flag"
 			quadTextureSprite = "GFX_flag_smallest"
 			position = { x = 305 y = 20 }
 			Orientation = upper_left
-			pdx_tooltip = "[This.GetName]"
-		}
+			pdx_tooltip = "flag_alignment_tip"
+			pdx_tooltip_delayed = "main_factions_tip"
+		}		
 	}
 	
 	containerWindowType = {
@@ -158,14 +291,41 @@ guiTypes = {
 		position = { x = -200 y = 0}	
 		size = { width = 422 height = 100 }
 		
-		buttonType = {
+		iconType = {
 			name = "flag"
 			quadTextureSprite = "GFX_shield_small"
 			position = { x = 305 y = 20 }
 			Orientation = upper_left
-			pdx_tooltip = "[This.GetName]"
+			pdx_tooltip = "flag_alignment_tip"
+			pdx_tooltip_delayed = "main_factions_tip"
 		}
 	}
+	
+	containerWindowType = {
+		name = "KR_china_tag_entry2"
+		position = { x = -200 y = 0}	
+		size = { width = 422 height = 100 }
+		
+		iconType = {
+			name = "flag"
+			quadTextureSprite = "GFX_flag_smallest"
+			position = { x = 305 y = 20 }
+			Orientation = upper_left
+			pdx_tooltip = "flag_alignment_tip"
+			pdx_tooltip_delayed = "main_factions_tip"
+		}
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 332 y = 25 }
+			font = "Arial12"
+			text = "[THIS.GetFactionName]"
+			format = left
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+		}		
+	}	
 
 	containerWindowType = {
 		name = "china_army_reform_button"
