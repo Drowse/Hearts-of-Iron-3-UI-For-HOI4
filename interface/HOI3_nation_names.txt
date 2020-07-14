@@ -16,9 +16,9 @@ guiTypes = {
 			font = "hoi_18mbs"
             text = "hoi3_nation_name_text"
 			format = left
-			maxWidth = 60
+			maxWidth = 50
 			maxHeight = 24
-			fixedsize = yes
+			fixedsize = no
 			
 			#pdx_tooltip = "KR_PARTY_POP_EFFECT"
 			#pdx_tooltip_delayed = "party_popularity_delayed_tooltip"

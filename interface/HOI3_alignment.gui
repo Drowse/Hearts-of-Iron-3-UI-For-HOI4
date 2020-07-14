@@ -3,8 +3,8 @@
 
 guiTypes = {
 	containerWindowType =  {
-		name = "china_open_faction_alignment_container"
-		position = { x = 82 y = 425 }
+		name = "HOI3_alignment_gui_container"
+		position = { x = -4  y = 8 }
 		orientation = upper_left
 
 		buttonType = {
@@ -12,13 +12,13 @@ guiTypes = {
 			position = { x = 17 y = 0 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonFont = "hoi_16mbs"
-			buttonText = "Chinese Factions"
+			buttonText = "Alignment Chart"
 		}
 	}
 	
 	containerWindowType = {
-		name = "faction_alignment_window"
-		position = { x = -250 y = -250 }
+		name = "hoi3_faction_alignment_window"
+		position = { x = -250 y = -400 }
 		size = { width = 520 height = 775 }
 
 		fade_time = 300
@@ -55,17 +55,17 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "faction_alignment_container"
+			name = "hoi3_faction_alignment_container"
 			position = {x = 10 y = 300}
 			size = {width = 460 height = 540 } 
 			margin = { top = 10 bottom = 10 }
 			Orientation = upper_left
 
-			verticalScrollbar = "right_vertical_slider"
+			#verticalScrollbar = "right_vertical_slider"
 
 			iconType ={
-				name ="diplo_filter_area_bg"
-				spriteType = "GFX_diplo_upper_win_bg"
+				name ="diplomacy_triangle_bg"
+				spriteType = "GFX_diplomacy_triangle_bg"
 				position = { x= -0 y = -305 }
 				alwaystransparent = yes
 			}
@@ -75,10 +75,10 @@ guiTypes = {
 				position = { x = 37 y = -128 }
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
-				text = "Allies"
+				text = allies_title
 				maxWidth = 300
 				maxHeight = 20
-				format = upper_left	
+				format = left	
 			}			
 			
 			iconType ={
@@ -91,13 +91,13 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "axis_title"
-				position = { x = 39 y = -186 }
+				position = { x = 37 y = -186 }
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
-				text = "Axis"
+				text = axis_title
 				maxWidth = 300
 				maxHeight = 20
-				format = upper_left	
+				format = left	
 			}			
 
 			iconType ={
@@ -110,13 +110,13 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "comintern_title"
-				position = { x = 26 y = -68 }
+				position = { x = 37 y = -68 }
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
-				text = "Comintern"
+				text = comintern_title
 				maxWidth = 300
 				maxHeight = 20
-				format = upper_left	
+				format = left
 			}				
 
 			iconType ={
@@ -135,144 +135,191 @@ guiTypes = {
 				text = "Factions"
 				maxWidth = 300
 				maxHeight = 20
-				format = upper_left	
+				format = left	
 			}			
 
 			gridboxtype = {
-				name = "KR_china_tags_grid"
-				position = { x = 44 y = 80 }
+				name = "HOI3_tags_grid"
+				position = { x = 53 y = 40 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 5
+				max_slots_horizontal = 4
 				max_slots_vertical = 6
 			}		
 			
-			gridboxtype = {
-				name = "KR_china_tags_grid1"
-				position = { x = 167 y = 330 }
+			gridboxtype = { # Default
+				name = "HOI3_tags_grid1"
+				position = { x = 186 y = 330 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 24 height = 18 }
 				max_slots_horizontal = 5
-				max_slots_vertical = 6
+				max_slots_vertical = 4
 			}	
+			
+			# gridboxtype = { # KR code
+				# name = "HOI3_tags_grid1"
+				# position = { x = 190 y = 315 }
+				# size = { width = 100 height = 100 }
+				# slotsize = { width = 24 height = 18 }
+				# max_slots_horizontal = 4
+				# max_slots_vertical = 5
+			# }			
 
 			gridboxtype = {
-				name = "KR_china_tags_grid2"
-				position = { x = -80 y = 330 }
+				name = "HOI3_tags_grid2"
+				position = { x = -96 y = 332 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 24 height = 18 }
 				max_slots_horizontal = 5
-				max_slots_vertical = 6
+				max_slots_vertical = 4
 			}
 
 			gridboxtype = {
-				name = "KR_china_tags_grid3"
-				position = { x = 8 y = 213 }
+				name = "HOI3_tags_grid3"
+				position = { x = 52 y = 187 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 8
-				max_slots_vertical = 6
+				max_slots_horizontal = 4
+				max_slots_vertical = 8
 			}
 
 			gridboxtype = {
-				name = "KR_china_tags_grid4"
-				position = { x = -70 y = -138 }
+				name = "HOI3_tags_grid4"
+				position = { x = -70 y = -134 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 30 height = 18 }
-				max_slots_horizontal = 20
+				max_slots_horizontal = 13
 				max_slots_vertical = 1
-				format = left
 			}	
 
 			gridboxtype = {
-				name = "KR_china_tags_grid5"
-				position = { x = -70 y = -197 }
+				name = "HOI3_tags_grid5"
+				position = { x = -70 y = -192 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 30 height = 18 }
-				max_slots_horizontal = 20
+				max_slots_horizontal = 13
 				max_slots_vertical = 1
-				format = left
 			}				
 			
 			gridboxtype = {
-				name = "KR_china_tags_grid6"
-				position = { x = -70 y = -78}
+				name = "HOI3_tags_grid6"
+				position = { x = -70 y = -74}
 				size = { width = 100 height = 100 }
 				slotsize = { width = 30 height = 18 }
-				max_slots_horizontal = 20
+				max_slots_horizontal = 13
 				max_slots_vertical = 1
-				format = left
 			}	
 
 			gridboxtype = {
-				name = "KR_china_tags_grid7"
+				name = "HOI3_tags_grid7"
 				position = { x = 195 y = -5}
 				size = { width = 100 height = 100 }
 				slotsize = { width = 85 height = 18 }
 				max_slots_horizontal = 2
 				max_slots_vertical = 5
-				
-				format = left
 			}	
 			gridboxtype = {
-				name = "KR_china_tags_grid8"
-				position = { x = -36 y = 200 }
+				name = "HOI3_tags_grid8"
+				position = { x = -22 y = 169 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 2
-				max_slots_vertical = 4
-			}		
-			gridboxtype = {
-				name = "KR_china_tags_grid9"
-				position = { x = 8 y = 185 }
-				size = { width = 265 height = 100 }
-				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 8
-				max_slots_vertical = 2
-				format = center
-			}			
-			gridboxtype = {
-				name = "KR_china_tags_grid10"
-				position = { x = 120 y = 200 }
-				size = { width = 265 height = 100 }
-				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 2
-				max_slots_vertical = 4
-				format = center
-			}		
-			gridboxtype = {
-				name = "KR_china_tags_grid11"
-				position = { x = -100 y = 300 }
-				size = { width = 215 height = 100 }
-				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 8
-				max_slots_vertical = 2
-				format = center
-			}		
-			gridboxtype = {
-				name = "KR_china_tags_grid12"
-				position = { x = 8 y = 330 }
-				size = { width = 215 height = 100 }
-				slotsize = { width = 24 height = 18 }
-				max_slots_horizontal = 8
-				max_slots_vertical = 2
-				format = center
+				max_slots_horizontal = 3
+				max_slots_vertical = 6
 			}
-			gridboxtype = {
-				name = "KR_china_tags_grid13"
-				position = { x = 70 y = 295 }
-				size = { width = 215 height = 100 }
+			
+			gridboxtype = { # Default
+				name = "HOI3_tags_grid9"
+				position = { x = 17 y = 97 }
+				size = { width = 100 height = 100 }
 				slotsize = { width = 24 height = 18 }
 				max_slots_horizontal = 7
-				max_slots_vertical = 2
-				format = center
-			}			
+				max_slots_vertical = 4
+			}
+
+			# gridboxtype = { # RF Code
+				# name = "HOI3_tags_grid9"
+				# position = { x = 29 y = 113 }
+				# size = { width = 100 height = 100 }
+				# slotsize = { width = 24 height = 18 }
+				# max_slots_horizontal = 6
+				# max_slots_vertical = 3
+			# }			
+
+			# gridboxtype = { # KR Code
+				# name = "HOI3_tags_grid9"
+				# position = { x = 6 y = 97 }
+				# size = { width = 100 height = 100 }
+				# slotsize = { width = 24 height = 18 }
+				# max_slots_horizontal = 4
+				# max_slots_vertical = 4
+			# }			
+			
+			gridboxtype = { # Default
+				name = "HOI3_tags_grid10"
+				position = { x = 150 y = 169 }
+				size = { width = 100 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 3
+				max_slots_vertical = 6
+			}
+			
+			# gridboxtype = { # BIce Code
+				# name = "HOI3_tags_grid10"
+				# position = { x = 150 y = 169 }
+				# size = { width = 100 height = 100 }
+				# slotsize = { width = 24 height = 18 }
+				# max_slots_horizontal = 3
+				# max_slots_vertical = 8
+			# }	
+
+			# gridboxtype = { # KR Code
+				# name = "HOI3_tags_grid10"
+				# position = { x = 150 y = 169 }
+				# size = { width = 100 height = 100 }
+				# slotsize = { width = 24 height = 18 }
+				# max_slots_horizontal = 3
+				# max_slots_vertical = 8
+			# }				
+			
+			gridboxtype = {
+				name = "HOI3_tags_grid11"
+				position = { x = -128 y = 278 }
+				size = { width = 215 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 3
+			}		
+			gridboxtype = {
+				name = "HOI3_tags_grid12"
+				position = { x = -18 y = 330 }
+				size = { width = 215 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 4
+			}
+			gridboxtype = { # Default
+				name = "HOI3_tags_grid13"
+				position = { x = 104 y = 276 }
+				size = { width = 215 height = 100 }
+				slotsize = { width = 24 height = 18 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 3
+			}
+
+			# gridboxtype = { # KR Code
+				# name = "HOI3_tags_grid13"
+				# position = { x = 101 y = 97 }
+				# size = { width = 100 height = 100 }
+				# slotsize = { width = 24 height = 18 }
+				# max_slots_horizontal = 4
+				# max_slots_vertical = 4
+			# }			
 		}
 	}
 	
 	# this entry will be used to populate the country_grid above
 	containerWindowType = {
-		name = "KR_china_tag_entry"
+		name = "hoi3_tag_entry"
 		position = { x = -200 y = 0}	
 		size = { width = 422 height = 100 }
 		
@@ -287,7 +334,7 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
-		name = "KR_china_tag_entry1"
+		name = "hoi3_main_factions_entry"
 		position = { x = -200 y = 0}	
 		size = { width = 422 height = 100 }
 		
@@ -302,7 +349,7 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
-		name = "KR_china_tag_entry2"
+		name = "hoi3_all_factions"
 		position = { x = -200 y = 0}	
 		size = { width = 422 height = 100 }
 		
@@ -325,76 +372,5 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}		
-	}	
-
-	containerWindowType = {
-		name = "china_army_reform_button"
-		position = {x=0 y=0}
-		size = { width=20 height=20 }
-
-		iconType = {
-			name = "china_army_reform_level_one_icon"
-			quadTextureSprite = "GFX_army_reform_level"
-			frame = 1
-			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
-
-			pdx_tooltip = "china_army_reform_idea"
-			pdx_tooltip_delayed = "china_army_reform_idea_desc"
-		}
-
-		iconType = {
-			name = "china_army_reform_level_two_icon"
-			quadTextureSprite = "GFX_army_reform_level"
-			frame = 2
-			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
-
-			pdx_tooltip = "china_army_reform_idea"
-			pdx_tooltip_delayed = "china_army_reform_idea_desc"
-		}
-
-		iconType = {
-			name = "china_army_reform_level_three_icon"
-			quadTextureSprite = "GFX_army_reform_level"
-			frame = 3
-			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
-
-			pdx_tooltip = "china_army_reform_idea"
-			pdx_tooltip_delayed = "china_army_reform_idea_desc"
-		}
-
-		iconType = {
-			name = "china_army_reform_level_four_icon"
-			quadTextureSprite = "GFX_army_reform_level"
-			frame = 4
-			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
-
-			pdx_tooltip = "china_army_reform_idea"
-			pdx_tooltip_delayed = "china_army_reform_idea_desc"
-		}
-
-		iconType = {
-			name = "china_army_reform_level_five_icon"
-			quadTextureSprite = "GFX_army_reform_level"
-			frame = 5
-			position = { x= @army_reform_x_pos y = @army_reform_y_pos }
-
-			pdx_tooltip = "china_army_reform_idea"
-			pdx_tooltip_delayed = "china_army_reform_idea_desc"
-		}
-	}
-
-	containerWindowType = {
-		name = "FNG_japanese_tensions_container"
-		position = { x=0 y=20 }
-		size = { width=20 height=20 }
-
-		iconType = {
-			name = "FNG_japanese_tensions_icon"
-			spriteType = "GFX_FNG_japanese_tensions_level"
-			position = { x= -2 y = -28 }
-
-			pdx_tooltip = FNG_japanese_tensions_tooltip
-			pdx_tooltip_delayed = FNG_japanese_tensions_tooltip_long
-		}
 	}
 }
