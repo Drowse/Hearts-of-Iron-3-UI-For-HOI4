@@ -25,6 +25,7 @@ guiTypes = {
 			name ="diplo_filter_area_bg"
 			spriteType = "GFX_diplo_filter_area_bg"
 			position = { x= 9 y = 0 }
+			alwaystransparent = yes
 		}		
 		
 		containerWindowType = {

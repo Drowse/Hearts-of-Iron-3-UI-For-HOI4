@@ -43,6 +43,7 @@ guiTypes = {
 			spriteType = "GFX_deployment_binding"
 			position = { x= 9 y = 0 }
 			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}	
 
 		instantTextboxType = {
@@ -125,6 +126,7 @@ guiTypes = {
 			name ="template_header_bg"
 			spriteType = "GFX_template_header_bg"
 			position = { x = 12 y = 0 }
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {

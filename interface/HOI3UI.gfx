@@ -65,6 +65,18 @@ spriteTypes = {
 		size = { x = 127 y = 10 }
 		effectFile = "gfx/FX/progress_startend.lua"
 		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_buildings_strip2"
+		textureFile = "gfx/HOI3UI/building_icon_strip2.dds"
+		noOfFrames = 14
+	}		
+	
+	spriteType = {
+		name = "GFX_buildings_strip3"
+		textureFile = "gfx/HOI3UI/building_icon_strip3.dds"
+		noOfFrames = 14
 	}	
 	
 	
