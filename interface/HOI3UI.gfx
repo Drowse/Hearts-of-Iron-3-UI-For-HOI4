@@ -54,6 +54,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplomacy_triangle_bg"
 		texturefile = "gfx/HOI3UI/diplomacy_triangle_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_main_lobby_button2"
+		texturefile = "gfx/HOI3UI/main_lobby_button2.dds"
 	}
 	
 	progressbartype = {
