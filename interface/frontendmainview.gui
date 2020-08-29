@@ -31,11 +31,10 @@ guiTypes = {
 		animation_time = 1000
 		size = { width = 256 height = 768}
 		
-		iconType =
-		{
+		iconType = { # Not Needed
 			name ="frontend_game_logo"
-			#spriteType = "GFX_frontend_game_logo"
-			position = { x= 20 y = 20 }
+			spriteType = "GFX_frontend_game_logo"
+			position = { x= 9999 y = 9999 }
 		}
 		
 	}
@@ -92,14 +91,14 @@ guiTypes = {
 	### SINGLE PLAYER MENU
 	containerWindowType = {
 		name = "mainmenu_single_player"
-		position = { x=0 y =0}
-		size = { width = 320 height = 395}
+		position = { x=8 y =110}
+		size = { width = 320 height = 520}
 		Orientation = CENTER
 		Origo = center	
-				
+		
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
+			quadTextureSprite ="GFX_hoi3_blank"
 		}
 		
 		ButtonType = {
@@ -107,7 +106,7 @@ guiTypes = {
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CONTINUE"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -146,30 +145,30 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_new_button"
-			position = { x = 16 y = 58 }
+			position = { x = 16 y = 68}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		ButtonType = {
 			name = "sp_load_button"
-			position = {  x = 16 y = 98 }
+			position = {  x = 16 y = 118 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		ButtonType = {
 			name = "sp_tutorial_button"
-			position = { x = 16 y = 138}
+			position = { x = 16 y = 168 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -179,7 +178,7 @@ guiTypes = {
 			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -196,7 +195,7 @@ guiTypes = {
 				
 		background = {
 			name = "Background"		
-			#quadTextureSprite ="GFX_tiled_window"
+			quadTextureSprite ="GFX_hoi3_blank"
 		}
 			
 		ButtonType = {

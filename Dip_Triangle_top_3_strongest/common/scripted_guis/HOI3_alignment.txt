@@ -1,0 +1,530 @@
+scripted_gui = {
+
+	HOI3_alignment_gui = {
+		context_type = player_context
+		parent_window_token = diplomacy_tab 
+		window_name = "HOI3_alignment_gui_container"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			button_open_click_enabled = {
+				NOT = { has_country_flag = triangle_window_open }
+			}
+		}
+
+		effects = {
+			button_open_click = {
+			##############
+			#Vanilla Code#			
+			##############
+				every_country = {
+					if = { # Democratic nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							has_government = democratic 
+							democratic > 0.49
+						}
+						add_to_array = { ROOT.democratic_alignment_array = THIS } #HOI3_tags_grid
+					}				
+					
+					if = { # Fascist nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							has_government = fascism
+							fascism > 0.49
+						}
+						add_to_array = { ROOT.fascism_alignment_array = THIS } # HOI3_tags_grid1
+					}
+					
+					if = { # Communist nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							has_government = communism 
+							communism > 0.49
+						}
+						add_to_array = { ROOT.communism_alignment_array = THIS } # HOI3_tags_grid2
+					}				
+					if = { # neutral nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							has_government = neutrality 
+							neutrality > 0.49
+						}
+						add_to_array = { ROOT.neutrality_alignment_array = THIS } # HOI3_tags_grid3
+					}
+
+					if = { # Dem/Com nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							OR = {
+								AND = {
+									has_government = democratic 
+									communism > 0.49
+								}
+								AND = {
+									has_government = communism 
+									democratic > 0.49
+								}
+							}
+						}
+						add_to_array = { ROOT.dem_com_alignment_array = THIS } # HOI3_tags_grid8
+					}
+
+					if = { # Dem/Neu nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							OR = {
+								AND = {
+									has_government = democratic 
+									neutrality > 0.49
+								}
+								AND = {
+									has_government = neutrality 
+									democratic > 0.49
+								}
+							}
+						}
+						add_to_array = { ROOT.dem_neu_alignment_array = THIS } # HOI3_tags_grid9
+					}
+
+					if = { # Dem/Fas nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							OR = {
+								AND = {
+									has_government = democratic 
+									fascism > 0.49
+								}
+								AND = {
+									has_government = fascism 
+									democratic > 0.49
+								}
+							}
+						}
+						add_to_array = { ROOT.dem_fas_alignment_array = THIS } # HOI3_tags_grid10
+					}	
+
+					if = { # Com/Neu nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							OR = {
+								AND = {
+									has_government = communism 
+									neutrality > 0.49
+								}
+								AND = {
+									has_government = neutrality 
+									communism > 0.49
+								}
+							}
+						}
+						add_to_array = { ROOT.com_neu_alignment_array = THIS } # HOI3_tags_grid11
+					}
+
+					if = { # Com/Fas nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							OR = {
+								AND = {
+									has_government = communism 
+									fascism > 0.49
+								}
+								AND = {
+									has_government = fascism 
+									communism > 0.49
+								}
+							}
+						}
+						add_to_array = { ROOT.com_fas_alignment_array = THIS } # HOI3_tags_grid12
+					}	
+
+					if = { # Fas/Neu nation grid
+						limit = {
+							OR = {
+								AND = {
+									is_puppet = no
+									is_in_faction = yes
+								}
+								AND = {
+									is_puppet = no
+									num_of_factories > 4
+								}
+								AND = {
+									is_puppet = yes 
+									num_of_factories > 9 # No Super weak Tags on grid
+								}
+							}					
+							OR = {
+								AND = {
+									has_government = fascism 
+									neutrality > 0.49
+								}
+								AND = {
+									has_government = neutrality 
+									fascism > 0.49
+								}
+							}
+						}
+						add_to_array = { ROOT.fas_neu_alignment_array = THIS } # HOI3_tags_grid13
+						
+					}
+
+					clear_variable = num_of_factories_faction
+
+					if = {
+						limit = {
+							is_faction_leader = yes
+						}
+						for_each_loop = {
+							array = faction_members
+							add_to_variable = {
+								num_of_factories_faction = v:num_of_factories
+							}
+						}
+					}
+
+					if = { # factions Grid HOI3_tags_grid7
+						limit = {
+							is_faction_leader = yes
+						}
+						add_to_array = { # faction leader goes first
+							ROOT.factions_array = THIS							
+						}
+					}	
+				}
+				random_scope_in_array = {
+					array = global.majors
+					limit = {
+						is_faction_leader = yes
+						all_of_scopes = {
+							array = global.majors
+							OR = {
+								tag = PREV
+								is_faction_leader = no
+								check_variable = { PREV.num_of_factories_faction > num_of_factories_faction }
+							}
+						}
+					}
+					add_to_array = {
+						ROOT.GER_ally_array = THIS
+					}
+					for_each_loop = {
+						array = allies
+						add_to_array = {
+							ROOT.GER_ally_array = v
+						}
+					}
+				}
+				random_scope_in_array = {
+					array = global.majors
+					limit = {
+						is_faction_leader = yes
+						NOT = {
+							tag = var:ROOT.GER_ally_array^0
+						}
+						all_of_scopes = {
+							array = global.majors
+							OR = {
+								tag = PREV
+								is_faction_leader = no
+								tag = var:ROOT.GER_ally_array^0
+								check_variable = { PREV.num_of_factories_faction > num_of_factories_faction }
+							}
+						}
+					}
+					add_to_array = {
+						ROOT.ENG_ally_array = THIS
+					}
+					for_each_loop = {
+						array = allies
+						add_to_array = {
+							ROOT.ENG_ally_array = v
+						}
+					}
+				}
+				random_scope_in_array = {
+					array = global.majors
+					limit = {
+						is_faction_leader = yes
+						NOT = {
+							tag = var:ROOT.GER_ally_array^0
+							tag = var:ROOT.ENG_ally_array^0
+						}
+						all_of_scopes = {
+							array = global.majors
+							OR = {
+								tag = PREV
+								is_faction_leader = no
+								tag = var:ROOT.GER_ally_array^0
+								tag = var:ROOT.ENG_ally_array^0
+								check_variable = { PREV.num_of_factories_faction > num_of_factories_faction }
+							}
+						}
+					}
+					add_to_array = {
+						ROOT.SOV_ally_array = THIS
+					}
+					for_each_loop = {
+						array = allies
+						add_to_array = {
+							ROOT.SOV_ally_array = v
+						}
+					}
+				}
+				set_country_flag = triangle_window_open
+			}
+		 }
+	}
+
+
+	HOI3_alignment_grid = {
+		context_type = player_context
+		window_name = "hoi3_faction_alignment_window"
+
+		visible = {
+			has_country_flag = triangle_window_open
+		}
+
+		dynamic_lists = {
+			HOI3_tags_grid = {
+				array = democratic_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}
+			
+			HOI3_tags_grid1 = {
+				array = fascism_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}	
+
+			HOI3_tags_grid2 = {
+				array = communism_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}	
+
+
+			HOI3_tags_grid3 = {
+				array = neutrality_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}	
+
+			HOI3_tags_grid4 = {
+				array = ENG_ally_array
+				change_scope = yes
+
+				entry_container = hoi3_main_factions_entry
+			}			
+			HOI3_tags_grid5 = {
+				array = GER_ally_array
+				change_scope = yes
+
+				entry_container = hoi3_main_factions_entry
+			}				
+			HOI3_tags_grid6 = {
+				array = SOV_ally_array
+				change_scope = yes
+
+				entry_container = hoi3_main_factions_entry
+			}			
+			
+			HOI3_tags_grid7 = {
+				array = factions_array
+				change_scope = yes
+
+				entry_container = hoi3_all_factions
+			}				
+			
+			HOI3_tags_grid8 = {
+				array = dem_com_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}				
+			
+			HOI3_tags_grid9 = {
+				array = dem_neu_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}				
+			
+			HOI3_tags_grid10 = {
+				array = dem_fas_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}			
+			HOI3_tags_grid11 = {
+				array = com_neu_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}				
+			HOI3_tags_grid12 = {
+				array = com_fas_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}				
+			HOI3_tags_grid13 = {
+				array = fas_neu_alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}				
+		}
+
+		effects = {
+			button_close_click = {
+				clear_array = democratic_alignment_array
+				clear_array = fascism_alignment_array
+				clear_array = communism_alignment_array
+				clear_array = neutrality_alignment_array
+				clear_array = ENG_ally_array
+				clear_array = GER_ally_array
+				clear_array = SOV_ally_array
+				clear_array = factions_array
+				clear_array = dem_com_alignment_array
+				clear_array = dem_neu_alignment_array
+				clear_array = dem_fas_alignment_array
+				clear_array = com_neu_alignment_array
+				clear_array = com_fas_alignment_array
+				clear_array = fas_neu_alignment_array
+				clr_country_flag = triangle_window_open
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+	}
+}

@@ -30,7 +30,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "date"
-			position = { x = 22 y = 147 }
+			position = { x = 0 y = 46 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "FE_BOOKMARK_DATE"
@@ -507,11 +507,11 @@ guiTypes = {
 		clipping = no
 		orientation = center
 		origo = center
-		moveable = yes
+		moveable = yes		
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 120 y = 15 }
+			position = { x = 120 y = 100 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -519,32 +519,62 @@ guiTypes = {
 			maxWidth = 340
 			maxHeight = 30	
 			format = center
-		}
+		}	
 		
 		background = {
 			name = "single_player_date_bg"		
 			quadTextureSprite ="GFX_select_date_bg"
+			position = { x = 0 y = -130 }
 		}
+		
+		iconType = {
+			name = "frontend_chat_bg"
+			spriteType = "GFX_frontend_chat_bg"
+			position = { x = -218 y = 450 }
+		}		
 		
 		containerWindowType = {
 			name ="bookmarks"
-			position = { x = 43 y = 55 }
+			position = { x = 0 y = 0 }
 			size = { width = -10 height = 120}
 			
 			gridboxType = {
 				name ="bookmarks_grid"
-				position = { x = 0 y = 0 }
+				position = { x = 142 y = 140 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 260 height = 0 }
+				slotsize = { width = 260 height = 42 }
 				add_horizontal = yes
-				max_slots_vertical = 1
+				max_slots_horizontal = 1
+				max_slots_vertical = 2
 				format = "UPPER_LEFT"
 			}
+			
+			instantTextBoxType = {
+				name = "road_to_war_title"
+				position = { x = 177 y = 170 }
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 0}
+				text = "Gathering Storm"
+				maxWidth = 340
+				maxHeight = 30	
+				format = left
+			}	
+
+			instantTextBoxType = {
+				name = "blitzkrieg_title"
+				position = { x = 177 y = 212 }
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 0}
+				text = "Blitzkrieg"
+				maxWidth = 340
+				maxHeight = 30	
+				format = left
+			}			
 		}
 		
-		instantTextBoxType = {
+		instantTextBoxType = { # Not Needed
 			name = "history_title"
-			position = { x = 110 y = 275 }
+			position = { x = 9999 y = 9999 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "BM_HISTORY_TITLE"
@@ -555,8 +585,8 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 25 y = 305 }
-			font = "hoi4_typewriter22"
+			position = { x = -198 y = 465 }
+			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340
 			maxHeight = 30	
@@ -565,21 +595,21 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 25 y = 330 }
-			font = "hoi4_typewriter16"
+			position = { x = -198 y = 486 }
+			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 540
+			maxWidth = 750
 			maxHeight = 30	
 			format = left
 		}
 		
 		ButtonType = {
 			name = "back_button"
-			position = { x = 30 y = -57 }
+			position = { x = -10 y = 85 }
 			quadTextureSprite ="GFX_button_221x34"	
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
-			Orientation = "LOWER_LEFT"
+			Orientation = "LOWER_RIGHT"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -587,7 +617,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = -252 y = -57 }
+			position = { x = -10 y = 50 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "FE_SELECT_SCENARIO"
 			buttonFont = "hoi_18mbs"
@@ -1793,11 +1823,10 @@ guiTypes = {
 			size = { width=102% height =128}
 			clipping = no
 		
-			Background =
-			{
+			Background = { # Not Needed
 				name ="top_bg"
 				spriteType = "GFX_tiled_frontend_upper_bar"
-				position = { x=-10 y=0 }
+				position = { x=9999 y=9999 }
 			}
 
 			containerWindowType = {
@@ -1811,14 +1840,14 @@ guiTypes = {
 
 				iconType ={
 					name ="menu_top_date_bg"
-					spriteType = "GFX_menu_top_bg_bg"
-					position = { x= -196 y = 54 }
+					spriteType = "GFX_select_date_bg"
+					position = { x= -290 y = -160 }
 				}	
 				
 				instantTextBoxType = {
 					name = "date"
-					position = { x = -170 y = 65 }
-					font = "hoi_24header"
+					position = { x = -100 y = 70 }
+					font = "hoi_20b"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"	
 					maxWidth = 340
@@ -1828,8 +1857,8 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "name"
-					position = { x = -184 y = 85 }
-					font = "hoi_24header"
+					position = { x = -300 y = 70 }
+					font = "hoi_20b"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"	
 					maxWidth = 360
@@ -1838,14 +1867,14 @@ guiTypes = {
 					fixedsize = yes
 				}
 				
-				ButtonType = {
+				ButtonType = { # Not Needed
 					name = "scenario_button"
-					position = { x = -136 y = 115 }
+					position = { x = 9999 y = 9999 }
 					quadTextureSprite ="GFX_button_261x34"	
 					buttonText = "FE_CHANGE_SCENARIO"
 					buttonFont = "hoi_20b"
 					clicksound = click_ok
-					shortcut = "c"
+					#shortcut = "c"
 				}
 				
 				# 1st BUTTON (BIG)
@@ -1974,10 +2003,10 @@ guiTypes = {
 			size = { width=102% height =128}
 			Orientation = lower_left	
 			
-			Background ={
+			Background ={ # Not Needed
 				name ="bottom_win"
 				spriteType = "GFX_tiled_frontend_lower_bar"
-				position = { x=-10 y =0}				
+				position = { x=9999 y =9999}				
 			}
 			
 			ButtonType = {

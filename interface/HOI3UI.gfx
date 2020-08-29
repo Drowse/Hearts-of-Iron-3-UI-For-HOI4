@@ -59,6 +59,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_main_lobby_button2"
 		texturefile = "gfx/HOI3UI/main_lobby_button2.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_hoi3_blank"
+		texturefile = "gfx/HOI3UI/hoi3_blank.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_frontend_chat_bg"
+		texturefile = "gfx/HOI3UI/frontend_chat_bg.dds"
 	}
 	
 	progressbartype = {
@@ -82,7 +92,17 @@ spriteTypes = {
 		name = "GFX_buildings_strip3"
 		textureFile = "gfx/HOI3UI/building_icon_strip3.dds"
 		noOfFrames = 14
+	}
+
+	spriteType = {
+		name = "GFX_select_date_bg"
+		texturefile = "gfx/interface/select_date_bg.dds"
 	}	
 	
-	
+	maskedShieldType = {
+		name = "GFX_flag_circle_small"
+		textureFile1 = "gfx/HOI3UI/flag_circle_small_overlay.dds"
+		textureFile2 = "gfx/HOI3UI/flag_circle_small_mask.tga"
+		effectFile = "gfx/FX/maskedflag.lua"
+	}
 }
