@@ -67,6 +67,11 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_button_212wide"
+		texturefile = "gfx/HOI3UI/button_212wide.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_frontend_chat_bg"
 		texturefile = "gfx/HOI3UI/frontend_chat_bg.dds"
 	}
@@ -97,6 +102,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_select_date_bg"
 		texturefile = "gfx/interface/select_date_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ledger_columns"
+		texturefile = "gfx/HOI3UI/ledger_columns.dds"
 	}	
 	
 	maskedShieldType = {

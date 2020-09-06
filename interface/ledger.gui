@@ -26,9 +26,16 @@ guiTypes = {
 			quadTextureSprite ="GFX_ledger"
 		}
 		
+        iconType = {
+            name = "Background_underlay"
+            quadTextureSprite ="GFX_ledger_columns"
+			Orientation = center
+			position = { x=-496 y =-171 }
+        }		
+		
 		buttonType = {
 			name = "close"
-			position = {x=-40 y=22}	
+			position = {x=-40 y=112}	
 			spriteType = "GFX_closebutton"
 			orientation = "UPPER_RIGHT"
 			shortcut = "ESCAPE"
@@ -38,9 +45,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "ledger_title"
-			position = { x = 290 y = 18 }
+			position = { x = 290 y = 154 }
 			
-			font = "hoi_36header"
+			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "LEDGER_TITLE_SL"	
 			maxWidth = 450
@@ -54,8 +61,8 @@ guiTypes = {
 
         buttonType = {
             name = "country_header"
-            position = { x=50 y =106}
-            font = "hoi_16mbs"
+            position = { x=50 y =182 }
+            font = "Main_14_black"
             buttonText = "LEDGER_COUNTRY"
 			quadTextureSprite = "GFX_tt_overlay_150_20"
 			format = center
@@ -70,19 +77,19 @@ guiTypes = {
 
             buttonType = {
                 name = "ideology_header"
-                position = { x = 220 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 220 y = 76 }
+                font = "Main_14_black"
                 text = "IDEOLOGY"
                 quadTextureSprite = "GFX_tt_overlay_150_20"
                 format = center
                 pdx_tooltip = "LEDGER_GROUP_TT"
                 clicksound = click_default
-            }
+            }			
             
             buttonType = {
                 name = "stability_header"
-                position = { x = 365 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 365 y = 76 }
+                font = "Main_14_black"
                 text = "STABILITY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -92,8 +99,8 @@ guiTypes = {
 
             buttonType = {
                 name = "war_support_header"
-                position = { x = 465 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 465 y = 76 }
+                font = "Main_14_black"
                 text = "WAR_SUPPORT"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -103,8 +110,8 @@ guiTypes = {
 
             buttonType = {
                 name = "political_power_header"
-                position = { x = 565 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 565 y = 76 }
+                font = "Main_14_black"
                 text = "POLITICAL_POWER"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -114,8 +121,8 @@ guiTypes = {
 			
             buttonType = {
                 name = "industry_header_2"
-                position = { x = 665 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 665 y = 76 }
+                font = "Main_14_black"
                 text = "INDUSTRIAL_CAPACITY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -125,8 +132,8 @@ guiTypes = {
 			
             buttonType = {
                 name = "population_header"
-                position = { x = 765 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 765 y = 76 }
+                font = "Main_14_black"
                 text = "LEDGER_POPULATION"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -136,8 +143,8 @@ guiTypes = {
 
             buttonType = {
                 name = "research_slots_header"
-                position = { x = 865 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 865 y = 76 }
+                font = "Main_14_black"
                 text = "LEDGER_RESEARCH_SLOTS"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -150,11 +157,12 @@ guiTypes = {
 			name = "countries_info_2"
 			position = { x=30 y =106 }
 			clipping = no
+			
 
             ButtonType = {
                 name = "num_battalions_header"
-                position = { x=265 y =0}
-                font = "hoi_16mbs"
+                position = { x=265 y =76}
+                font = "Main_14_black"
                 text = "LEDGER_BATTALIONS"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -164,8 +172,8 @@ guiTypes = {
             
             buttonType = {
                 name = "num_divisions_header"
-                position = { x = 365 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 365 y = 76 }
+                font = "Main_14_black"
                 text = "LEDGER_DIVISIONS"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -175,8 +183,8 @@ guiTypes = {
 
             buttonType = {
                 name = "manpower_header"
-                position = { x = 465 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 465 y = 76 }
+                font = "Main_14_black"
                 text = "MANPOWER"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -186,8 +194,8 @@ guiTypes = {
 
             buttonType = {
                 name = "army_xp_header"
-                position = { x = 565 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 565 y = 76 }
+                font = "Main_14_black"
                 text = "ARMY_EXPERIENCE"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -197,8 +205,8 @@ guiTypes = {
 			
             buttonType = {
                 name = "command_power_header"
-                position = { x = 665 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 665 y = 76 }
+                font = "Main_14_black"
                 text = "COMMAND_POWER"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -208,8 +216,8 @@ guiTypes = {
 			
             ButtonType = {
                 name = "casualties_header"
-                position = { x = 765 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 765 y = 76 }
+                font = "Main_14_black"
                 text = "CASUALTY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -219,8 +227,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "land_doctrine_level_header_txt"
-                position = { x=865 y =-14}
-                font = "hoi_16mbs"
+                position = { x=865 y =73 }
+                font = "Main_14_black"
                 text = "LEDGER_LAND_DOCTRINE_LEVEL"
                 maxWidth = 100
                 maxHeight = 34
@@ -231,7 +239,7 @@ guiTypes = {
             buttonType = {
                 name = "land_doctrine_level_header"
                 position = { x = 865 y = -20 }
-                font = "hoi_16mbs"
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -247,8 +255,8 @@ guiTypes = {
 
             buttonType = {
                 name = "navy_header_4"
-                position = { x=265 y =0}
-                font = "hoi_16mbs"
+                position = { x=265 y =76}
+                font = "Main_14_black"
                 text = "LEDGER_NAVY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -258,8 +266,8 @@ guiTypes = {
             
             buttonType = {
                 name = "air_header_4"
-                position = { x = 365 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 365 y = 76 }
+                font = "Main_14_black"
                 text = "LEDGER_AIR"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -269,8 +277,8 @@ guiTypes = {
 
             buttonType = {
                 name = "navy_xp_header"
-                position = { x = 465 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 465 y = 76 }
+                font = "Main_14_black"
                 text = "NAVY_EXPERIENCE"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -280,8 +288,8 @@ guiTypes = {
 
             buttonType = {
                 name = "air_xp_header"
-                position = { x = 565 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 565 y = 76 }
+                font = "Main_14_black"
                 text = "AIR_EXPERIENCE"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -291,8 +299,8 @@ guiTypes = {
 			
             buttonType = {
                 name = "num_of_nukes_header"
-                position = { x = 665 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 665 y = 76 }
+                font = "Main_14_black"
                 text = "NUCLEAR_BOMB"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -302,8 +310,8 @@ guiTypes = {
 			
             buttonType = {
                 name = "nuclear_reactors_header"
-                position = { x = 765 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 765 y = 76 }
+                font = "Main_14_black"
                 text = "nuclear_reactor_plural"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -313,8 +321,8 @@ guiTypes = {
 
             buttonType = {
                 name = "rocket_sites_header"
-                position = { x = 865 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 865 y = 76 }
+                font = "Main_14_black"
                 text = "rocket_site_plural"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -330,8 +338,8 @@ guiTypes = {
 
             buttonType = {
                 name = "faction_header_5"
-                position = { x=245 y =0}
-                font = "hoi_16mbs"
+                position = { x=245 y =77}
+                font = "Main_14_black"
                 text = "FACTION"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -341,8 +349,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "num_civilian_factories_header_txt"
-                position = { x=365 y =-14}
-                font = "hoi_16mbs"
+                position = { x=365 y =79}
+                font = "Main_14_black"
                 text = "industrial_complex_plural"
                 maxWidth = 100
                 maxHeight = 34
@@ -352,8 +360,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "num_civilian_factories_header"
-                position = { x=365 y = -20 }
-                font = "hoi_16mbs"
+                position = { x=365 y = 79 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -363,8 +371,8 @@ guiTypes = {
             
             ButtonType = {
                 name = "consumer_goods_header"
-                position = { x = 465 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 465 y = 76 }
+                font = "Main_14_black"
                 text = "MODIFIER_CONSUMER_GOODS_FACTOR"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -374,8 +382,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "military_factories_header_txt"
-                position = { x= 565 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 565 y =79}
+                font = "Main_14_black"
                 text = "arms_factory_plural"
                 maxWidth = 100
                 maxHeight = 34
@@ -385,8 +393,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "military_factories_header"
-                position = { x = 565 y = -20 }
-                font = "hoi_16mbs"
+                position = { x = 565 y = 79 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -396,8 +404,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "naval_factories_header"
-                position = { x = 665 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 665 y = 76 }
+                font = "Main_14_black"
                 text = "dockyard_plural"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -407,8 +415,8 @@ guiTypes = {
 			
             ButtonType = {
                 name = "industry_header_5"
-                position = { x = 765 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 765 y = 76 }
+                font = "Main_14_black"
                 text = "INDUSTRIAL_CAPACITY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -418,8 +426,8 @@ guiTypes = {
 			
             buttonType = {
                 name = "fuel_header"
-                position = { x = 865 y = 0 }
-                font = "hoi_16mbs"
+                position = { x = 865 y = 76 }
+                font = "Main_14_black"
                 text = "FUEL"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -435,8 +443,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_header_6"
-                position = { x=245 y =0}
-                font = "hoi_16mbs"
+                position = { x=245 y =76}
+                font = "Main_14_black"
                 text = "FACTION"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -446,8 +454,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "owned_states_header_txt"
-                position = { x= 365 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 365 y =74}
+                font = "Main_14_black"
                 text = "LEDGER_OWNED_STATES"
                 maxWidth = 100
                 maxHeight = 34
@@ -457,8 +465,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "owned_states_header"
-                position = { x=365 y =-20}
-                font = "hoi_16mbs"
+                position = { x=365 y = 74 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -468,8 +476,8 @@ guiTypes = {
             
             instantTextBoxType = {
                 name = "controlled_states_header_txt"
-                position = { x= 465 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 465 y =79}
+                font = "Main_14_black"
                 text = "LEDGER_CONTROLLED_STATES"
                 maxWidth = 100
                 maxHeight = 34
@@ -479,8 +487,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "controlled_states_header"
-                position = { x = 465 y = -20 }
-                font = "hoi_16mbs"
+                position = { x = 465 y =79 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -490,8 +498,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "owned_controlled_states_header_txt"
-                position = { x= 565 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 565 y =79}
+                font = "Main_14_black"
                 text = "LEDGER_OWNED_CONTROLLED_STATES"
                 maxWidth = 100
                 maxHeight = 34
@@ -501,8 +509,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "owned_controlled_states_header"
-                position = { x = 565 y = -20 }
-                font = "hoi_16mbs"
+                position = { x = 565 y = 79 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -512,8 +520,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "occupied_states_header_txt"
-                position = { x= 665 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 665 y =74}
+                font = "Main_14_black"
                 text = "LEDGER_OCCUPIED_STATES"
                 maxWidth = 100
                 maxHeight = 34
@@ -523,8 +531,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "occupied_states_header"
-                position = { x = 665 y = -20 }
-                font = "hoi_16mbs"
+                position = { x = 665 y =74 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -534,8 +542,8 @@ guiTypes = {
 			
             instantTextBoxType = {
                 name = "core_states_header_txt"
-                position = { x= 765 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 765 y =74}
+                font = "Main_14_black"
                 text = "LEDGER_CORE_STATES"
                 maxWidth = 100
                 maxHeight = 34
@@ -545,8 +553,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "core_states_header"
-                position = { x = 765 y = -20 }
-                font = "hoi_16mbs"
+                position = { x = 765 y = 74 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -556,8 +564,8 @@ guiTypes = {
 			
             instantTextBoxType = {
                 name = "controlled_states_including_subjects_header_txt"
-                position = { x= 865 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 865 y =74}
+                font = "Main_14_black"
                 text = "LEDGER_CONTROLELD_STATES_INCLUDING_SUBJECTS"
                 maxWidth = 100
                 maxHeight = 34
@@ -567,8 +575,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "controlled_states_including_subjects_header"
-                position = { x = 865 y = -20 }
-                font = "hoi_16mbs"
+                position = { x = 865 y =74 }
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -584,8 +592,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_header_7"
-                position = { x=20 y =0}
-				font = "hoi_16mbs"
+                position = { x=20 y =76}
+				font = "Main_14_black"
 				buttonText = "FACTION"
 				quadTextureSprite = "GFX_tt_overlay_150_20"
 				format = center
@@ -595,8 +603,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_leader_header"
-                position = { x=245 y = 0}
-                font = "hoi_16mbs"
+                position = { x=245 y = 76}
+                font = "Main_14_black"
                 text = "LEDGER_FACTION_LEADER"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -605,8 +613,8 @@ guiTypes = {
             
             ButtonType = {
                 name = "faction_members_header"
-                position = { x=365 y = 0}
-                font = "hoi_16mbs"
+                position = { x=365 y = 76}
+                font = "Main_14_black"
                 text = "LEDGER_FACTION_MEMBERS"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -616,8 +624,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_battalions_header"
-                position = { x=465 y = 0}
-                font = "hoi_16mbs"
+                position = { x=465 y = 76}
+                font = "Main_14_black"
                 text = "LEDGER_BATTALIONS"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -627,8 +635,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_ships_header"
-                position = { x=565 y = 0}
-                font = "hoi_16mbs"
+                position = { x=565 y = 77 }
+                font = "Main_14_black"
                 text = "LEDGER_NAVY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -638,8 +646,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_airforce_header"
-                position = { x=665 y = 0}
-                font = "hoi_16mbs"
+                position = { x=665 y = 77 }
+                font = "Main_14_black"
                 text = "LEDGER_AIR"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -649,8 +657,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_industry_header"
-                position = { x=765 y = 0}
-                font = "hoi_16mbs"
+                position = { x=765 y = 77}
+                font = "Main_14_black"
                 text = "INDUSTRIAL_CAPACITY"
                 quadTextureSprite = "GFX_tt_overlay_100_20"
                 format = center
@@ -660,8 +668,8 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "faction_states_header_txt"
-                position = { x= 865 y =-14}
-                font = "hoi_16mbs"
+                position = { x= 865 y =79}
+                font = "Main_14_black"
                 text = "LEDGER_CONTROLLED_STATES"
                 maxWidth = 100
                 maxHeight = 34
@@ -671,8 +679,8 @@ guiTypes = {
 
             ButtonType = {
                 name = "faction_states_header"
-                position = { x=865 y = -20}
-                font = "hoi_16mbs"
+                position = { x=865 y = 79}
+                font = "Main_14_black"
                 text = ""
                 quadTextureSprite = "GFX_tt_overlay_100_40"
                 format = center
@@ -683,9 +691,10 @@ guiTypes = {
 
         containerWindowType = {
             name = "countries_info_list"
-            position = { x=30 y =128 }
-            size = { width = 994 height=524 }
-            margin = { top = 8 bottom = 8 }
+            position = { x=30 y =208 }
+            size = { width = 982 height=481 }
+			vertical_scroll_step = 30
+            margin = { top = 0 bottom = 0 }
             verticalScrollbar = "right_vertical_slider"
             
             background = {
@@ -695,10 +704,10 @@ guiTypes = {
             
             gridboxType = {
                 name ="country_list"
-                position = { x = 0 y = 0 }
-                padding = { top = 50 bottom = 50 }
+                position = { x = 0 y = 9 }
+                padding = { top = 0 bottom = -8 }
                 size = { width = 100%% height = 100%% }
-                slotsize = { width = 270 height = 25 }
+                slotsize = { width = 270 height = 30 }
                 format = "UPPER_LEFT"
                 #add_horizontal = no
                 max_slots_horizontal = 1
@@ -707,9 +716,8 @@ guiTypes = {
 
 		ButtonType = {
 			name = "next_page"
-			position = { x=200 y =305}
-			quadTextureSprite ="GFX_button_148x34"
-            buttonText = "MUSICPLAYER_NEXT"
+			position = { x=200 y =349}
+			quadTextureSprite ="GFX_button_212wide"
             Orientation = center
             origo = center
 			clicksound = click_default
@@ -717,30 +725,53 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "previous_page"
-			position = { x=-348 y =305}
-			quadTextureSprite ="GFX_button_148x34"
-            buttonText = "MUSICPLAYER_PREV"
+			position = { x=-410 y =349}
+			quadTextureSprite ="GFX_button_212wide"
             Orientation = center
             origo = center
 			clicksound = click_default
 		}
+		
+		instantTextBoxType = {
+			name = "next_page label"
+			position = { x = 294 y = 357 }
+			font = "Main_14_black"
+			text = "MUSICPLAYER_NEXT"
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes	
+			Orientation = "center"
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "prev_page label"
+			position = { x = -326 y = 357 }
+			font = "Main_14_black"
+			text = "MUSICPLAYER_PREV"
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes	
+			Orientation = "center"
+			alwaystransparent = yes
+		}		
 	}
 
 	containerWindowType = {
-		name = "ledger_country_entry_1"
+		name = "ledger_country_entry_1" 		
 		
 		iconType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
-		}	
+		}
 
 		iconType ={
 			name ="major_overlay"
 			spriteType = "GFX_flag_small_golden_frame"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -749,7 +780,7 @@ guiTypes = {
 			name = "country_name"
 			position = { x = 43 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetName]"
 			pdx_tooltip = "LEDGER_COUNTRY_TT"	
@@ -763,7 +794,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ideology_name"
 			position = { x = 220 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetRulingIdeology]"
 			maxWidth = 150
@@ -779,7 +810,7 @@ guiTypes = {
 			name = "stability"
 			position = { x = 365 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.stability|%0]"
 			maxWidth = 100
@@ -794,7 +825,7 @@ guiTypes = {
 			name = "war_support"
 			position = { x = 465 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.has_war_support|%0]"	
 			maxWidth = 100
@@ -809,7 +840,7 @@ guiTypes = {
 			name = "political_power"
 			position = { x = 565 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.has_political_power|0]"
 			maxWidth = 100
@@ -824,7 +855,7 @@ guiTypes = {
 			name = "industry"
 			position = { x = 665 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_factories]"	
 			maxWidth = 100
@@ -839,7 +870,7 @@ guiTypes = {
 			name = "population"
 			position = { x = 765 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.max_manpower_k|2]k"	
 			maxWidth = 100
@@ -853,7 +884,7 @@ guiTypes = {
 			name = "research_slots"
 			position = { x = 865 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.amount_research_slots]"
             pdx_tooltip = "LEDGER_RESEARCH_SLOTS_TT"
@@ -871,7 +902,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}	
@@ -879,7 +910,7 @@ guiTypes = {
 		iconType ={
 			name ="major_overlay"
 			spriteType = "GFX_flag_small_golden_frame"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -888,7 +919,7 @@ guiTypes = {
 			name = "country_name"
 			position = { x = 43 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetName]"
 			pdx_tooltip = "LEDGER_COUNTRY_TT"	
@@ -902,7 +933,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "num_battalions"
 			position = { x = 265 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_battalions|0]"
 			maxWidth = 100
@@ -918,7 +949,7 @@ guiTypes = {
 			name = "num_divisions"
 			position = { x = 365 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_divisions|0]"
 			maxWidth = 100
@@ -933,7 +964,7 @@ guiTypes = {
 			name = "manpower"
 			position = { x = 465 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.manpower_k|2]k"	
 			maxWidth = 100
@@ -948,7 +979,7 @@ guiTypes = {
 			name = "army_xp"
 			position = { x = 565 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.army_experience|0]"
 			maxWidth = 100
@@ -962,7 +993,7 @@ guiTypes = {
 			name = "command_power"
 			position = { x = 665 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.command_power|0]"	
             pdx_tooltip = "LEDGER_COMMAND_POWER_TT"
@@ -977,7 +1008,7 @@ guiTypes = {
 			name = "casualties"
 			position = { x = 765 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.casualties_k|2]k"	
 			maxWidth = 100
@@ -991,7 +1022,7 @@ guiTypes = {
 			name = "land_doctrine_level"
 			position = { x = 865 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.land_doctrine_level|0]"	
 			maxWidth = 100
@@ -1008,7 +1039,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}	
@@ -1016,7 +1047,7 @@ guiTypes = {
 		iconType ={
 			name ="major_overlay"
 			spriteType = "GFX_flag_small_golden_frame"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -1025,7 +1056,7 @@ guiTypes = {
 			name = "country_name"
 			position = { x = 43 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetName]"
 			pdx_tooltip = "LEDGER_COUNTRY_TT"	
@@ -1039,7 +1070,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "num_ships"
 			position = { x = 265 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_ships|0]"
 			maxWidth = 100
@@ -1055,7 +1086,7 @@ guiTypes = {
 			name = "air"
 			position = { x = 365 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_deployed_planes|0]"
 			maxWidth = 100
@@ -1070,7 +1101,7 @@ guiTypes = {
 			name = "navy_xp"
 			position = { x = 465 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.navy_experience|0]"	
 			maxWidth = 100
@@ -1085,7 +1116,7 @@ guiTypes = {
 			name = "air_xp"
 			position = { x = 565 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.air_experience|0]"
 			maxWidth = 100
@@ -1099,7 +1130,7 @@ guiTypes = {
 			name = "num_of_nukes"
 			position = { x = 665 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_nukes|0]"	
 			maxWidth = 100
@@ -1113,7 +1144,7 @@ guiTypes = {
 			name = "nuclear_reactors"
 			position = { x = 765 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.nuclear_reactors|0]"	
 			maxWidth = 100
@@ -1127,7 +1158,7 @@ guiTypes = {
 			name = "rocket_sites"
 			position = { x = 865 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.rocket_sites|0]"	
 			maxWidth = 100
@@ -1144,7 +1175,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}
@@ -1152,7 +1183,7 @@ guiTypes = {
 		iconType ={
 			name ="major_overlay"
 			spriteType = "GFX_flag_small_golden_frame"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -1161,7 +1192,7 @@ guiTypes = {
 			name = "country_name"
 			position = { x = 43 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetName]"
 			pdx_tooltip = "LEDGER_COUNTRY_TT"	
@@ -1177,7 +1208,7 @@ guiTypes = {
 			name = "faction_name"
 			position = { x = 220 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetFactionName]"	
 			maxWidth = 150
@@ -1191,7 +1222,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "num_civilian_factories"
 			position = { x = 365 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_civilian_factories|0]"
 			maxWidth = 100
@@ -1207,7 +1238,7 @@ guiTypes = {
 			name = "consumer_goods"
 			position = { x = 465 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.modifier@consumer_goods_factor|%0]"
 			maxWidth = 100
@@ -1223,7 +1254,7 @@ guiTypes = {
 			name = "military_factories"
 			position = { x = 565 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_military_factories|0]"	
 			maxWidth = 100
@@ -1239,7 +1270,7 @@ guiTypes = {
 			name = "naval_factories"
 			position = { x = 665 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_naval_factories|0]"
 			maxWidth = 100
@@ -1254,7 +1285,7 @@ guiTypes = {
 			name = "industry"
 			position = { x = 765 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_factories|0]"
             pdx_tooltip = "LEDGER_INDUSTRY_TT"
@@ -1269,7 +1300,7 @@ guiTypes = {
 			name = "fuel"
 			position = { x = 865 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.fuel_k|2]k"	
 			maxWidth = 100
@@ -1286,7 +1317,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}	
@@ -1294,7 +1325,7 @@ guiTypes = {
 		iconType ={
 			name ="major_overlay"
 			spriteType = "GFX_flag_small_golden_frame"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -3 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -1303,7 +1334,7 @@ guiTypes = {
 			name = "country_name"
 			position = { x = 43 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetName]"
 			pdx_tooltip = "LEDGER_COUNTRY_TT"	
@@ -1318,7 +1349,7 @@ guiTypes = {
 			name = "faction_name"
 			position = { x = 220 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetFactionName]"	
 			maxWidth = 150
@@ -1332,7 +1363,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "owned_states"
 			position = { x = 365 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_owned_states|0]"
 			maxWidth = 100
@@ -1347,7 +1378,7 @@ guiTypes = {
 			name = "controlled_states"
 			position = { x = 465 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_of_controlled_states|0]"
 			maxWidth = 100
@@ -1362,7 +1393,7 @@ guiTypes = {
 			name = "owned_controlled_states"
 			position = { x = 565 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_owned_controlled_states|0]"
 			maxWidth = 100
@@ -1377,7 +1408,7 @@ guiTypes = {
 			name = "occupied_states"
 			position = { x = 665 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_occupied_states|0]"
 			maxWidth = 100
@@ -1392,7 +1423,7 @@ guiTypes = {
 			name = "core_states"
 			position = { x = 765 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_core_states|0]"
 			maxWidth = 100
@@ -1406,7 +1437,7 @@ guiTypes = {
 			name = "controlled_states_including_subjects"
 			position = { x = 865 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.num_controlled_states_including_subjects|0]"
 			maxWidth = 100
@@ -1424,7 +1455,7 @@ guiTypes = {
 			name = "faction_name"
 			position = { x = 43 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetFactionName]"
 			pdx_tooltip = "LEDGER_COUNTRY_TT"	
@@ -1439,7 +1470,7 @@ guiTypes = {
 			name = "country_name"
 			position = { x = 195 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.GetNameWithFlag]"	
 			maxWidth = 175
@@ -1453,7 +1484,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "faction_members"
 			position = { x = 365 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.faction_members^num|0]"
 			maxWidth = 100
@@ -1467,7 +1498,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "faction_brigades"
 			position = { x = 465 y = 0 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.faction_battalions|0]"
 			maxWidth = 100
@@ -1482,7 +1513,7 @@ guiTypes = {
 			name = "faction_ships"
 			position = { x = 565 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.faction_ships|0]"
 			maxWidth = 100
@@ -1497,7 +1528,7 @@ guiTypes = {
 			name = "faction_air"
 			position = { x = 665 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.faction_air|0]"
 			maxWidth = 100
@@ -1512,7 +1543,7 @@ guiTypes = {
 			name = "faction_industry"
 			position = { x = 765 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.faction_industry|0]"
 			maxWidth = 100
@@ -1526,7 +1557,7 @@ guiTypes = {
 			name = "faction_controlled_states"
 			position = { x = 865 y = 0 }
 			
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			borderSize = {x = 0 y = 0}
 			text = "[?this.faction_controlled_states|0]"
 			maxWidth = 100
