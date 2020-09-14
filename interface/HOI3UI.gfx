@@ -98,11 +98,16 @@ spriteTypes = {
 		textureFile = "gfx/HOI3UI/building_icon_strip3.dds"
 		noOfFrames = 14
 	}
-
+	
 	spriteType = {
 		name = "GFX_select_date_bg"
 		texturefile = "gfx/interface/select_date_bg.dds"
 	}	
+	
+	spriteType = {
+		name = "GFX_decision_view_bg"
+		texturefile = "gfx/HOI3UI/decision_view_bg.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ledger_columns"

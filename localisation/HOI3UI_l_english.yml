@@ -65,3 +65,7 @@ comintern_title:0"[SOV.GetFactionName]"
 # axis_title:0 "[GER.GetFactionName]"
 # allies_title:0"[ENG.GetFactionName]"
 # comintern_title:0"[SOV.GetFactionName]"
+
+### Vanilla Loc Stuff ###
+
+DECISIONVIEW_TITLE:0 "Decisions"
