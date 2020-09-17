@@ -76,6 +76,36 @@ spriteTypes = {
 		texturefile = "gfx/HOI3UI/frontend_chat_bg.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_pause_menu_bg"
+		texturefile = "gfx/interface/menu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_menu_settings_bg"
+		texturefile = "gfx/interface/menu_settings.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_frontend_button3"
+		texturefile = "gfx/HOI3UI/frontend_button3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_frontend_button4"
+		texturefile = "gfx/HOI3UI/frontend_button4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_frontend_button5"
+		texturefile = "gfx/HOI3UI/frontend_button5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_settings_tab_button"
+		texturefile = "gfx/HOI3UI/settings_tab_button.dds"
+	}
+	
 	progressbartype = {
 		name = "GFX_activegoal_progress"
 		color = { 0.0 0.5 0.0 }

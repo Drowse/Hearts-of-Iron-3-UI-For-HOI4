@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ingamemenu"
 		position = { x = 0 y = 0 }	
-		size = { width = 320 height = 415}
+		size = { width = 300 height = 492}
 		Orientation = center
 		Origo = center		
 		fade_time = 500
@@ -12,45 +12,45 @@ guiTypes = {
 		
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
+			quadTextureSprite ="GFX_pause_menu_bg"
 		}
 			
 		buttonType = {
 			name = "menu_load_button"
-			position = { x = 16 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = { x = 28 y = 157 }
+			quadTextureSprite ="GFX_frontend_button3"	
 			buttonText = "MENU_BAR_LOAD_GAME"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		buttonType = {
 			name = "menu_save_button"
-			position = { x = 16 y = 58 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = { x = 28 y = 194 }
+			quadTextureSprite ="GFX_frontend_button3"	
 			buttonText = "MENU_BAR_SAVE_GAME"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		buttonType = {
 			name = "menu_gamesettings_button"
-			position = { x = 16 y = 98}
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = { x = 28 y = 231 }
+			quadTextureSprite ="GFX_frontend_button3"	
 			buttonText = "MENU_BAR_GAME_OPTIONS"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		buttonType = {
 			name = "menu_wiki_button"
-			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = { x = 28 y = 268 }
+			quadTextureSprite ="GFX_frontend_button3"	
 			buttonText = "MENU_BAR_GAME_WIKI"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 			web_link = ""
@@ -58,29 +58,29 @@ guiTypes = {
 		
 		buttonType = {
 			name = "menu_resign_button"
-			position = { x = 16 y = 178}
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = { x = 28 y = 305 }
+			quadTextureSprite ="GFX_frontend_button3"	
 			buttonText = "MENU_BAR_GAME_RESIGN"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 
 		buttonType = {
 			name = "menu_quit_button"
-			position = {  x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = {  x = 28 y = 342 }
+			quadTextureSprite ="GFX_frontend_button3"	
 			buttonText = "MENU_BAR_QUIT"
-			buttonFont = "hoi_24header"
+			buttonFont = "hoi_20b"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 				
 		buttonType = {
 			name = "menu_close_button"
-			position = { x = 16 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonFont = "hoi_24header"
+			position = { x = 58 y = 386 }
+			quadTextureSprite ="GFX_frontend_button4"	
+			buttonFont = "hoi_20b"
 			buttonText = "CLOSE"
 			shortcut = "ESCAPE"
 			clicksound = click_default
@@ -90,14 +90,14 @@ guiTypes = {
 		## facebook etc.
 		ButtonType = {
 			name = "homepage_button"
-			position = { x = 59 y = 349 }
+			position = { x = 48 y = 432 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x = 99 y = 349 }
+			position = { x = 87 y = 432 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
@@ -105,7 +105,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x = 139 y = 349 }
+			position = { x = 127 y = 432 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
@@ -114,7 +114,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "twitter_button"
-			position = { x = 179 y = 349 }
+			position = { x = 167 y = 432 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
@@ -123,7 +123,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x = 219 y = 349 }
+			position = { x = 207 y = 432 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
@@ -131,7 +131,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "achievements_button"
-			position = { x = 259 y = 349 }
+			position = { x = 259 y = 432 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}
@@ -139,7 +139,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name ="ingamemenu_load"
-		position = { x = -236 y = -270 }
+		position = { x = -225 y = -372 }
 		size = { width = 420 height = 500}
 		Orientation = center
 
@@ -147,40 +147,41 @@ guiTypes = {
 		
 		containerWindowType = {
 			name ="games"
-			position = { x = 75 y = 126 }	
-			size = { width = 350 height = 370}
+			position = { x = 75 y = 290 }	
+			size = { width = 286 height = 270}
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 5
 			
 			background = {
 				name = "Background"		
-				quadTextureSprite ="GFX_no_frame_special_bg"
+				quadTextureSprite ="GFX_pause_menu_bg"
+				position = { x = 0 y = -164 }
 			}
 			
 			gridBoxType = {
 				name = "games_grid"
-				position = { x=13 y =2}
-				size = { width =280 height = 400}
-				slotsize = { width = 280 height = 55 }
+				position = { x=28 y =0}
+				size = { width =280 height = 420}
+				slotsize = { width = 280 height = 38 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
 			}
 		}		
 		
 		iconType =
-		{
+		{ # Not Needed Anymore
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
-			position = { x= 76 y = 63 }
+			position = { x= 9999 y = 9999 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		
 		iconType =
-		{
+		{ # Not Needed Anymore
 			name ="menu_bottom"
 			spriteType = "GFX_load_save_bottom"
-			position = { x= 76 y = 490 }
+			position = { x= 9999 y = 9999 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -201,23 +202,23 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "localgames_tab"
-			position = { x = 105  y = 84 }
+			position = { x = 95  y = 254 }
 			quadTextureSprite ="GFX_save_load_file_btn"
 			Orientation = "UPPER_LEFT"
 		}
 
 		checkboxType = {
 			name = "remotegames_tab"
-			position = { x = 262 y = 84 }
+			position = { x = 230 y = 254 }
 			quadTextureSprite ="GFX_save_load_file_btn"
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "localgames_label"
-			position = { x = 115 y = 91 }
+			position = { x = 104 y = 259 }
 			textureFile = ""
-			font = "hoi_20bs"
+			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "MENU_BAR_LOCALGAMES"	
 			maxWidth = 100
@@ -229,7 +230,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "cloudgames_label"
-			position = { x = 269 y = 91 }
+			position = { x = 236 y = 259 }
 			textureFile = ""
 			font = "hoi_20bs"
 			borderSize = {x = 0 y = 0}
@@ -244,8 +245,8 @@ guiTypes = {
 
 		buttonType = {
 			name = "load"
-			position = { x = 245 y = 503 }
-			quadTextureSprite ="GFX_button_148x34"	
+			position = { x = 74 y = 562 }
+			quadTextureSprite ="GFX_frontend_button5"	
 			buttonText = "MENU_BAR_LOAD"
 			buttonFont = "hoi_20b"
 			Orientation = "UPPER_LEFT"
@@ -256,8 +257,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "cancel"
-			position = { x = 100 y = 503 }
-			quadTextureSprite ="GFX_button_148x34"	
+			position = { x = 218 y = 562 }
+			quadTextureSprite ="GFX_frontend_button5"	
 			buttonText = "BACK"
 			buttonFont = "hoi_20b"
 			Orientation = "UPPER_LEFT"
@@ -274,18 +275,18 @@ guiTypes = {
 		Orientation = center
 		
 		iconType =
-		{
+		{ # Not Needed
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
-			position = { x= 76 y = 60 }
+			position = { x= 9999 y = 9999 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType =
-		{
+		{ # Not Needed
 			name ="menu_bottom"
 			spriteType = "GFX_load_save_bottom_screen"
-			position = { x= 76 y = 446 }
+			position = { x= 9999 y = 9999 }
 			Orientation = "UPPER_LEFT"
 		}
 			
@@ -360,30 +361,31 @@ guiTypes = {
 		
 		containerWindowType = {
 			name ="games"
-			position = { x = 75 y = 126 }	
-			size = { width = 350 height = 320}
+			position = { x = 85 y = 190 }		
+			size = { width = 286 height = 240}
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 5
 			
 			background = {
 				name = "Background"		
-				quadTextureSprite ="GFX_no_frame_special_bg"
+				quadTextureSprite ="GFX_pause_menu_bg"
+				position = { x = 1 y = -166 }
 			}
 			
 			gridBoxType = {
 				name = "games_grid"
-				position = { x=13 y =15}
+				position = { x=28 y =0}
 				size = { width =280 height = 400}
-				slotsize = { width = 280 height = 55 }
+				slotsize = { width = 280 height = 38 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
 			}
 		}
 		
 		instantTextBoxType={
-			position = {x = 93 y = 450 }
+			position = {x = 80 y = 432 }
 			name = "filename_label"
-			font = "hoi_16mbs"
+			font = "Arial12"
 			borderSize = {x = 8 y = 0}	
 			maxWidth = 300
 			maxHeight = 18
@@ -393,9 +395,9 @@ guiTypes = {
 		}
 		
 		editBoxType = {
-			position = { x = 115 y = 465 }
+			position = { x = 105 y = 440 }
 			name = "game_name"
-			font = "hoi_16mbs"
+			font = "Arial12"
 			borderSize = { x = 4 y = 8  }	
 			size = { x=260 y=42 }
 			text = ""	
@@ -404,8 +406,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "cancel"
-			position = { x = 100 y = 503 }
-			quadTextureSprite ="GFX_button_148x34"	
+			position = { x = 228 y = 462 }
+			quadTextureSprite ="GFX_frontend_button5"	
 			buttonText = "BACK"
 			buttonFont = "hoi_20b"
 			Orientation = "UPPER_LEFT"
@@ -416,8 +418,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "save"
-			position = { x = 245 y = 503 }
-			quadTextureSprite ="GFX_button_148x34"
+			position = { x = 84 y = 462 }
+			quadTextureSprite ="GFX_frontend_button5"
 			buttonText = "MENU_BAR_SAVE"
 			buttonFont = "hoi_20b"
 			Orientation = "UPPER_LEFT"
@@ -434,35 +436,38 @@ guiTypes = {
 		clipping = no
 		
 		buttonType = {
-			name = "BackgroundButton"		
-			quadTextureSprite ="GFX_load_save_entry2"
+			name = "BackgroundButton"
+			quadTextureSprite ="GFX_frontend_button3"
 		}
 		
 		iconType = {
 			name ="player_shield"
 			quadTextureSprite = "GFX_flag_small2_not_masked"
-			position = { x= 5 y = 12 }
+			position = { x= 17 y = 13 }
 			alwaystransparent = yes
+			scale = 0.66
 		}
 
 		iconType = {
 			name ="player_shield_overlay"
 			quadTextureSprite = "GFX_flag_small2_not_masked"
-			position = { x= 5 y = 12 }
+			position = { x= 17 y = 13 }
 			alwaystransparent = yes
+			scale = 0.66
 		}
 
-		iconType = {
+		iconType = { # Not Needed
 			name ="player_shield_frame"
 			quadTextureSprite = "GFX_small_flag_frame_thin2"
-			position = { x= 1 y = 9 }
+			position = { x= 9999 y = 9999 }
 			alwaystransparent = yes
+			scale = 0.5
 		}
 		
 		instantTextBoxType={
-			position = {x = 53 y = 5 }
+			position = {x = 53 y = 7 }
 			name = "name"
-			font = "hoi_18mbs"
+			font = "Arial12"
 			maxWidth = 224
 			maxHeight = 18
 			format = left
@@ -471,9 +476,9 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x = 50 y = 24 }
+			position = {x = 50 y = 22 }
 			name = "date"
-			font = "hoi_18mbs"
+			font = "Arial12"
 			maxWidth = 217
 			maxHeight = 18
 			format = left
@@ -501,7 +506,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "delete"
-			position = { x=279 y=22 }
+			position = { x=202 y=12 }
 			spriteType = "GFX_NV_btn_delete"
 			clicksound = disband
 		}
@@ -509,7 +514,7 @@ guiTypes = {
 		iconType = {
 			name ="missing_dlc_sign"
 			quadTextureSprite = "GFX_missing_dlc_warning_sign"
-			position = { x= 250 y = 20 }
+			position = { x= -4 y = 8 }
 		}		
 	
 	}

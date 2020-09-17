@@ -28,6 +28,18 @@ Consumer_TEXT:0 "[?Root.fuel_k]k"
 flag_alignment_tip:0 "[THIS.GetName]"
 main_factions_tip:0 "Ruling Party: [THIS.GetRulingParty]\nParty's Ideology: [THIS.GetRulingIdeology]\nParty's Support: [THIS.GetPartySupport]%"
 
+SM_GAME:0 "§YGame§!"
+
+SM_VIDEO:0 "§YVideo§!" 
+
+SM_AUDIO:0 "§YAudio§!"
+
+SETTINGS_ACCESSIBILITY:0 "§YControls§!"
+
+SM_OPTIONS:0 "Settings"
+
+SM_AUTOSAVE_INTERVAL
+
 ### Alignment Triangle main factions ###
 
 ### Vanilla Code
