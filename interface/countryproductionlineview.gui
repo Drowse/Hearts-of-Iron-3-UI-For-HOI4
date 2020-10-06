@@ -9,11 +9,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countryproductionlineview"
-		position = { x=-550 y=-400}	
-		show_position = { x=-550 y =-400 }
-		show_animation_type = decelerated
-		hide_animation_type = accelerated
-		animation_time = 1
+		position = { x=-750 y=-400}
 		size = { width=1035 height=768 }
 		orientation = center
 		moveable = yes
@@ -1326,14 +1322,10 @@ guiTypes = {
 		}
 	}
 	
-	containerWindowType = {
+	containerWindowType = { # Controls Infantry and Artillery Menu
 		name = "production_equipment_window_military"
-		position = { x=-356 y=78}	
-		show_position = { x=539 y =78 }
-		show_animation_type = decelerated
-		hide_animation_type = accelerated
-		animation_time = 300
-		size = { width=375 height=100%% }
+		position = { x=1248 y=140 }	
+		size = { width=295 height=698 }
 		click_to_front = yes
 		
 		background = {
@@ -1350,15 +1342,16 @@ guiTypes = {
 			margin = { top = 13 bottom = 12}				
 		
 			background = {
-				name = "Background"		
-				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+				name = "Background"	
+				quadTextureSprite ="GFX_production_divdesign_bg"
+				position = { x=3 y=-2 }
 			}
 			
 			gridboxtype = {
 				name = "equipments_grid"
 				position = { x = 9 y = 0 }
 				size = { width = 120%% height = 100%% }
-				slotsize = { width = 335 height = 82 }
+				slotsize = { width = 335 height = 24 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
 			}
@@ -1366,22 +1359,22 @@ guiTypes = {
 		
 		buttonType = {
 			name = "checkbox"
-			position = { x = -355 y = 14 }
+			position = { x = 6 y = 16 }
 			quadTextureSprite ="GFX_generic_checkbox"
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 			clicksound = click_checkbox
 		}
 
 		iconType = {
 			name = "generic_text_bg_203"
-			position = { x=-319 y = 15 }
+			position = { x=30 y = 15 }
 			spriteType = "GFX_generic_text_bg_203"
-			Orientation = "UPPER_RIGHT"			
+			Orientation = "UPPER_LEFT"			
 		}	
 		
 		instantTextboxType = {
 			name = "outdated_units"
-			position = { x = -315 y = 19 }
+			position = { x = 36 y = 19 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -1390,17 +1383,17 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 			fixedsize = yes
-			Orientation = "UPPER_RIGHT"
+			Orientation = "UPPER_LEFT"
 		}
 
 		containerWindowType = {
 			name = "resources"
-			position = { x = 10 y = 50 }
+			position = { x = 10 y = 42 }
 			size = { width = 100% height = 100% }
 			
-			background = {
+			background = { # Not Needed
 				name = "Background"
-				position = { x = -2 y = -2 }				
+				position = { x = 9999 y = 9999 }				
 				quadTextureSprite ="GFX_generic_bg2"
 			}			
 				
@@ -1454,7 +1447,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "aluminium_icon"
-				position = { x=173 y=1 }
+				position = { x=0 y= 27 }
 				spriteType = "GFX_resources_strip"
 				frame = 2
 				#pdx_tooltip = "PRODUCTION_MATERIALS_ALUMINIUM"
@@ -1462,7 +1455,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "aluminium_checkbox"
-				position = { x = 195 y = 1 }
+				position = { x = 22 y = 28 }
 				quadTextureSprite ="GFX_generic_checkbox"
 				Orientation = "UPPER_LEFT"
 				clicksound = click_checkbox
@@ -1470,7 +1463,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "tungsten_icon"
-				position = { x=229 y=2 }
+				position = { x=58 y=27 }
 				spriteType = "GFX_resources_strip"
 				frame = 4
 				#pdx_tooltip = "PRODUCTION_MATERIALS_TUNGSTEN"
@@ -1478,7 +1471,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "tungsten_checkbox"
-				position = { x = 253 y = 1 }
+				position = { x = 80 y = 28 }
 				quadTextureSprite ="GFX_generic_checkbox"
 				Orientation = "UPPER_LEFT"
 				clicksound = click_checkbox
@@ -1486,7 +1479,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "chromium_icon"
-				position = { x=287 y=2 }
+				position = { x=113 y=27 }
 				spriteType = "GFX_resources_strip"
 				frame = 6
 				#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
@@ -1494,7 +1487,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "chromium_checkbox"
-				position = { x = 311 y = 1 }
+				position = { x = 138 y = 28 }
 				quadTextureSprite ="GFX_generic_checkbox"
 				Orientation = "UPPER_LEFT"
 				clicksound = click_checkbox
@@ -1503,7 +1496,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close"
-			position = { x = -50 y = 5 }
+			position = { x = -40 y = 8 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -1541,7 +1534,7 @@ guiTypes = {
 		
 			background = {
 				name = "Background"		
-				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+				quadTextureSprite ="GFX_production_divdesign_bg"
 			}
 			
 			gridboxtype = {
@@ -1784,7 +1777,7 @@ guiTypes = {
 		iconType = {
 			name ="subtech_strip_w_bg"
 			spriteType = "GFX_sub_tech_strip_w_bg"
-			position = { x=120 y=54 }
+			position = { x=-35 y=6 }
 			alwaystransparent = yes
 		}
 
@@ -1800,7 +1793,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 42 y = 16 }
 			size = { width = 40 height = 50 }
-			slotsize = { width = 40 height = 24 }
+			slotsize = { width = 40 height = 12 }
 			max_slots_vertical = 1
 			max_slots_horizontal = 3		
 			format = "UPPER_LEFT"
@@ -2112,7 +2105,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 360 y = 32 }
 			size = { width = 200 height = 50 }
-			slotsize = { width = 46 height = 24 }
+			slotsize = { width = 46 height = 12 }
 			max_slots_vertical = 1
 			max_slots_horizontal = 3			
 			format = "UPPER_LEFT"
@@ -2350,29 +2343,29 @@ guiTypes = {
 		#	position = { x= 289 y = 4 }
 		#}
 		
-		buttonType = {
+		buttonType = { # Not Needed
 			name = "btn_x10"
-			position = { x=278 y=30	 }
+			position = { x=9999 y=9999	 }
 			quadTextureSprite = "GFX_btn_x10"
 			clicksound = click_close
 		}
-		buttonType = {
+		buttonType = { # Not Needed
 			name = "btn_x5"
-			position = { x=278 y=68	 }
+			position = { x=9999 y=9999	 }
 			quadTextureSprite = "GFX_btn_x5"
 			clicksound = click_close
 		}
 
 		iconType = {
 			name = "equipment_button"
-			position = { x=1 y=27 }
+			position = { x=223 y=0 }
 			spriteType = "GFX_prod_land_equipment_item_large"
 		}
 
 		iconType = {
 			name ="equipment_icon"
 			spriteType = "GFX_technology_medium"
-			position = { x=140 y=68 }
+			position = { x=114 y=21 }
 			centerposition = yes
 			alwaystransparent = yes
 		}
@@ -2417,17 +2410,17 @@ guiTypes = {
 		
 		iconType = {
 			name = "resource_icon"
-			position = { x=0 y=0 }	
+			position = { x=8 y=1 }	
 			spriteType = "GFX_resources_strip"
-			scale = 0.8
+			scale = 0.5
 			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 16 y = 2 }
+			position = { x = 12 y = 0 }
 			textureFile = ""
-			font = "hoi_16mbs"
+			font = "Arial12"
 			borderSize = {x = 0 y = 0}
 			text = "8"
 			maxWidth = 30
@@ -2706,7 +2699,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 462 y = 31 }
 			size = { width = 40 height = 50 }
-			slotsize = { width = 40 height = 24 }
+			slotsize = { width = 40 height = 12 }
 			max_slots_vertical = 3
 			max_slots_horizontal = 1			
 			format = "UPPER_LEFT"
@@ -3035,7 +3028,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 360 y = 32 }
 			size = { width = 200 height = 50 }
-			slotsize = { width = 46 height = 24 }
+			slotsize = { width = 46 height = 12 }
 			max_slots_vertical = 1
 			max_slots_horizontal = 3			
 			format = "UPPER_LEFT"
@@ -3302,7 +3295,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 462 y = 31 }
 			size = { width = 40 height = 50 }
-			slotsize = { width = 40 height = 24 }
+			slotsize = { width = 40 height = 12 }
 			max_slots_vertical = 3
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
@@ -3542,7 +3535,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 360 y = 32 }
 			size = { width = 200 height = 50 }
-			slotsize = { width = 46 height = 24 }
+			slotsize = { width = 46 height = 12 }
 			max_slots_vertical = 1
 			max_slots_horizontal = 3
 			format = "UPPER_LEFT"
@@ -3849,10 +3842,10 @@ guiTypes = {
 			frame = 1
 		}
 
-		iconType = {
+		iconType = { # Not Needed
 			name ="outdated_equipment_overlay"
 			spriteType = "GFX_outdated_equipment_overlay"
-			position = { x=9 y=5 }
+			position = { x=9999 y=9999 }
 			alwaystransparent = yes			
 		}
 
@@ -3866,7 +3859,8 @@ guiTypes = {
 		iconType = {
 			name ="equipment_icon"
 			spriteType = "GFX_technology_medium"
-			position = { x=175 y=51 }
+			position = { x=32 y=15 }
+			scale = 0.33
 			centerposition = yes
 			alwaystransparent = yes
 		}
@@ -3888,25 +3882,26 @@ guiTypes = {
 		iconType = {
 			name ="sub_tech"
 			spriteType = "GFX_sub_tech_strip_w_bg"
-			position = { x=220 y=40 }
+			position = { x=214 y=12 }
 			frame = 1
+			scale = 0.5 
 			alwaystransparent = yes
 		}
 		
 		iconType = {
 			name = "carrier_fighter_icon"
-			position = { x = 230 y = 55 }
+			position = { x = 230 y = 12 }
 			spriteType = "GFX_airwing_carrier_icon"
 			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 20 y = 6 }
-			font = "hoi_18mbs"
+			position = { x = 60 y = 3 }
+			font = "Main_14_black"
+			maxWidth = 70
 			text = "Maus"
-			maxWidth = 200
-			maxHeight = 20
+			maxHeight = 10
 			fixedsize = yes
 			format = left
 			alwaystransparent = yes
@@ -3914,27 +3909,28 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "general_name"
-			position = { x = 20 y = 22 }
-			font = "hoi_16mbs"
+			position = { x = 60 y = 14 }
+			font = "Main_14_black"
 			text = "Perkele-tankki"
-			maxWidth = 150
-			maxHeight = 30
+			maxWidth = 70
+			maxHeight = 10
 			format = left
+			fixedsize = yes
 			alwaystransparent = yes
 		}
 		
-		iconType = {
+		iconType = { # Not Needed
 			name = "prod_entry_resource_bg"
-			position = { x = 257 y = 7 }
+			position = { x = 9999 y = 9999 }
 			spriteType = "GFX_prod_entry_resource_bg"
 			alwaystransparent = yes
 		}
 		
 		gridBoxType = {
 			name = "resources_grid"
-			position = { x = 258 y = 10 }
+			position = { x = 162 y = 3 }
 			size = { width = 48 height = 150 }
-			slotsize = { width = 35 height = 23 }
+			slotsize = { width = 35 height = 11 }
 			max_slots_vertical = 6
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
@@ -3942,7 +3938,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "variant"
-			position = { x=297 y=37 }
+			position = { x=197 y=12 }
 			spriteType = "GFX_create_variants_button"
 			clicksound = click_default
 			frame = 1
@@ -3950,19 +3946,20 @@ guiTypes = {
 		
 		buttonType = {
 			name = "obsolete"
-			position = { x=306 y=15 }
+			position = { x=238 y=6 }
 			spriteType = "GFX_toggle_obsolete_button"
 			clicksound = click_default
 		}		
 		
 		instantTextboxType = {
 			name = "production_cost"
-			position = { x = 15 y = 61 }
-			font = "hoi_18mbs"
+			position = { x = 126 y = 9 }
+			font = "Main_14_black"
 			text = "cost 9001"
-			maxWidth = 160
-			maxHeight = 30
+			maxWidth = 43
+			maxHeight = 10
 			format = left
+			fixedsize = yes
 			alwaystransparent = yes
 		}
 
@@ -4065,7 +4062,7 @@ guiTypes = {
 			name = "resources_grid"
 			position = { x = 376 y = 8 }
 			size = { width = 48 height = 150 }
-			slotsize = { width = 35 height = 23 }
+			slotsize = { width = 35 height = 11 }
 			max_slots_vertical = 6
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
@@ -4073,7 +4070,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "variant"
-			position = { x=419 y=37 }
+			position = { x=197 y=12 }
 			spriteType = "GFX_create_variants_button"
 			clicksound = click_default
 			frame = 2

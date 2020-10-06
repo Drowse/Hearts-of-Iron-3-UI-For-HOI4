@@ -142,6 +142,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ledger_columns"
 		texturefile = "gfx/HOI3UI/ledger_columns.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_production_divdesign_bg"
+		texturefile = "gfx/HOI3UI/production_divdesign_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_divdesign_button.tga"
+		texturefile = "gfx/HOI3UI/divdesign_button.tga"
 	}	
 	
 	maskedShieldType = {
