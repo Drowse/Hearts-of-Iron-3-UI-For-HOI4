@@ -43,14 +43,14 @@ guiTypes = {
 
 				buttonType = {
 					name = "portrait_btn"
-					position = { x = 9 y = 7 }
+					position = { x = -6 y = -8 }
 					spriteType = "GFX_LG_select_group_btn"
 					clicksound = click_default
 				}
 
 				iconType = {
 					name = "portrait_frame"
-					position = { x = 0 y = 0 }
+					position = { x = -6 y = -8 }
 					spriteType = "GFX_leader_group_frame_unselected"
 					alwaystransparent = yes
 				}
@@ -90,9 +90,9 @@ guiTypes = {
 
 		buttonType = {
 			name = "portrait_btn"
-			position = { x = 9 y = 7 }
+			position = {x=6 y=32 }
 			spriteType = "GFX_leader_unknown"
-			scale = 0.4
+			scale = 0.13
 			alwaystransparent = no
 		}
 
@@ -105,7 +105,7 @@ guiTypes = {
 
 		iconType = {
 			name = "portrait_frame"
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -10}
 			spriteType = "GFX_navy_group_frame"
 			alwaystransparent = no
 			frame = 1
@@ -113,7 +113,7 @@ guiTypes = {
 
 		iconType = {
 			name = "portrait_frame_hightlight"
-			position = { x=0 y=0 }
+			position = { x=0 y=-10 }
 			spriteType = "GFX_navy_group_frame"
 			alwaystransparent = yes
 			frame = 2
@@ -121,7 +121,7 @@ guiTypes = {
 
 		iconType = {
 			name = "group_marker"
-			position = {x=3 y=36}
+			position = {x=6 y=35}
 			quadTextureSprite ="GFX_group_marker2"
 			alwaystransparent = yes
 		}
@@ -129,14 +129,14 @@ guiTypes = {
 		ButtonType = {
 			name ="btn_disband_navy"
 			spriteType = "GFX_LG_disband_group_btn"	
-			position = {x=64 y=4}
+			position = {x=6 y=78}
 			clicksound = disband
 		}
 
 		instantTextboxType = {
 			name = "taskforce_count"
-			position = { x=6 y=90 }
-			font = "hoi_16mbs"
+			position = { x=10 y=38 }
+			font = "Main_14_black"
 			maxWidth = 70
 			maxHeight = 23
 			format = center
@@ -150,22 +150,22 @@ guiTypes = {
 
 		iconType = {
 			name = "portrait_btn"
-			position = { x = 29 y = 7 }
+			position = { x = 24 y = 7 }
 			spriteType = "GFX_reserve_portrait" 
 			alwaystransparent = no
 		}
 
 		iconType = {
 			name = "portrait_frame"
-			position = { x = 20 y = 0 }
+			position = { x = 10 y = -8 }
 			spriteType = "GFX_reserve_frame"
-			alwaystransparent = no
+			alwaystransparent = yes
 			frame = 1
 		}
 
 		iconType = {
 			name = "portrait_frame_hightlight"
-			position = { x=20 y=0 }
+			position = { x=10 y= -8 }
 			spriteType = "GFX_reserve_frame"
 			alwaystransparent = yes
 			frame = 2
@@ -173,8 +173,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "taskforce_count"
-			position = { x=26 y=90 }
-			font = "hoi_16mbs"
+			position = { x=20 y=40 }
+			font = "Main_14_black"
 			maxWidth = 70
 			maxHeight = 23
 			format = center

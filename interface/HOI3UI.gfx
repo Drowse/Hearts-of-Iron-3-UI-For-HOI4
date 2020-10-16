@@ -161,3 +161,19 @@ spriteTypes = {
 		effectFile = "gfx/FX/maskedflag.lua"
 	}
 }
+
+bitmapfonts = {
+	bitmapfont = {
+		name = "Arial12_black"
+		path = "gfx/fonts/Arial12"
+		color = 0xff000000
+		
+		textcolors = {
+			G = { 0 0 0 }
+			R = { 0 0 0 }
+			Y = { 0 0 0 }
+			H = { 0 0 0 }
+			T = { 0 0 0 }
+			W = { 0 0 0 }
+		}
+	}

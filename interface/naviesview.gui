@@ -5,7 +5,7 @@ guiTypes = {
 		name = "action_bar_window"
 		position = {x=-300 y=0}
 		show_position = {x=-300 y=-230}
-		size = { width=435 height=60 }
+		size = { width=335 height=60 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -269,7 +269,7 @@ guiTypes = {
 		name = "naviesview_window"
 		position = {x=-340 y=82}
 		show_position = {x=0 y=82}
-		size = { width=500 height=86%% }
+		size = { width=320 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -287,7 +287,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "detailed_fleet_list"
 			position = {x=0 y=0}
-			size = {width=528 height=400} # height adapted in code
+			size = {width=328 height=400} # height adapted in code
 			margin = { left=0 top=0 right=22 bottom=0 }
 			verticalScrollbar = "right_vertical_slider"
 			Orientation = upper_left
@@ -302,7 +302,7 @@ guiTypes = {
 				name = "detailed_fleet_box"
 				position = { x=0 y=0 }
 				size = { width=492 height=100%% }
-				slotsize = { width=100%% height=165 }
+				slotsize = { width=100%% height=142 }
 				max_slots_horizontal = 1
 			}
 
@@ -312,7 +312,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "tool_bar_window"
 			position = {x=0 y=0} # vertical position controlled by code
-			size = { width=492 height=44 }
+			size = { width=322 height=44 }
 			Orientation = upper_left
 
 			background = {
@@ -323,14 +323,15 @@ guiTypes = {
 			iconType = {
 				name = "icn_background"
 				spriteType = "GFX_task_force_actions_bg"
+				position = {x=4 y=0 }
 			}
 
 			# selection toolbox
-
-			@nv_tb_btn_y = 6
+									
+			@nv_tb_btn_y = 3
 			buttonType = {
 				name = "btn_delete"
-				position = {x=6 y=@nv_tb_btn_y}
+				position = {x=10 y=-2}
 				spriteType = "GFX_NV_btn_delete"
 				clicksound = click_default
 				pdx_tooltip = ""
@@ -338,121 +339,137 @@ guiTypes = {
 
 			buttonType = {
 				name = "btn_create_new_from_selected"
-				position = {x=64 y=@nv_tb_btn_y}
+				position = {x=78 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_create_new_from_selected"
 				clicksound = click_default
 				pdx_tooltip = CREATE_NEW_TASK_FORCE_FROM_SELECTION
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_split_in_half"
-				position = {x=94 y=@nv_tb_btn_y}
+				position = {x=98 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_split_in_half"
 				clicksound = click_default
 				shortcut = d
 				pdx_tooltip = NAVY_SPLIT_IN_HALF
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_select_half"
-				position = {x=124 y=@nv_tb_btn_y}
+				position = {x=118 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_select_half"
 				clicksound = click_default
 				shortcut = s
 				pdx_tooltip = NAVY_SELECT_HALF
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_exclude"
-				position = {x=154 y=@nv_tb_btn_y}
+				position = {x=138 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_set_as_reserve"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_merge"
-				position = {x=184 y=@nv_tb_btn_y}
+				position = {x=158 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_merge"
 				clicksound = click_default
 				shortcut = g
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_taskforce_o_matic"
-				position = {x=214 y=@nv_tb_btn_y}
+				position = {x=178 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_taskforce_o_matic"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_upgrade"
-				position = {x=274 y=@nv_tb_btn_y}
+				position = {x=198 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_upgrade"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			buttonType = {
 				name = "btn_repair_now"
-				position = {x=304 y=@nv_tb_btn_y}
+				position = {x=218 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_repair_now_small"
 				clicksound = click_default
 				pdx_tooltip = "NAVY_REPAIR_NOW"
+				scale = 0.66
 			}
 
 			buttonType = {
-				position = { x=364 y=@nv_tb_btn_y }
+				position = { x=238 y=@nv_tb_btn_y }
 				name = "btn_base_reinforce"
 				spriteType = "GFX_NV_btn_base_partial_toggle"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			iconType = {
 				name = "btn_reinforce"
-				position = {x=364 y=@nv_tb_btn_y}
+				position = {x=238 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_reinforce"
 				alwaystransparent = yes
+				scale = 0.66
 			}
 
 			buttonType = {
-				position = { x=394 y=@nv_tb_btn_y }
+				position = { x=258 y=@nv_tb_btn_y }
 				name = "btn_base_toggle_split_for_repair"
 				spriteType = "GFX_NV_btn_base_partial_toggle"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			iconType = {
 				name = "btn_toggle_split_for_repair"
-				position = {x=394 y=@nv_tb_btn_y}
+				position = {x=258 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_toggle_split_for_repair"
 				alwaystransparent = yes
+				scale = 0.66
 			}
 
 			buttonType = {
-				position = { x=424 y=@nv_tb_btn_y }
+				position = { x=278 y=@nv_tb_btn_y }
 				name = "btn_base_toggle_repair_priority"
 				spriteType = "GFX_NV_btn_base_partial_toggle"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			iconType = {
 				name = "btn_toggle_repair_priority"
-				position = {x=424 y=@nv_tb_btn_y}
+				position = {x=278 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_repair_priority"
 				alwaystransparent = yes
+				scale = 0.66
 			}
 
 			buttonType = {
-				position = { x=454 y=@nv_tb_btn_y }
+				position = { x=298 y=@nv_tb_btn_y }
 				name = "btn_base_aggressiveness"
 				spriteType = "GFX_NV_btn_base_partial_toggle"
 				clicksound = click_default
+				scale = 0.66
 			}
 
 			iconType = {
 				name = "btn_aggressiveness"
-				position = {x=454 y=@nv_tb_btn_y}
+				position = {x=298 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_aggressiveness_small"
 				alwaystransparent = yes
+				scale = 0.66
 			}
 
 		}
@@ -497,7 +514,7 @@ guiTypes = {
 		name = "fleet_view_header"
 		#name = "naviesview_entry"
 		position = {x=0 y=0}
-		size = { width=492 height=166 }
+		size = { width=322 height=166 }
 		Orientation = upper_left
 		clipping = no
 
@@ -509,35 +526,36 @@ guiTypes = {
 		iconType = {
 			name = "background_image"
 			spriteType = "GFX_fleet_bg"
-			position = {x=-2 y=2}
+			position = { x=4 y=16 }
 			alwaystransparent = yes
 		}
 
-		iconType = {
+		iconType = { # Not Needed
 			name = "highlight"
 			spriteType = "GFX_fleet_bg_hl"
-			position = { x=-4 y=0 }
+			position = { x=9999 y=9999 }
 			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "insigna"
-			position = { x=6 y=6 }
+			position = { x=6 y=16 }
 			spriteType = "GFX_theatre_army_shield"
+			scale = 0.5
 		}
 
 		editBoxType = {
 			name = "fleet_name"
-			position = {x=70 y=12}
-			font = "hoi_18"
+			position = {x=40 y=17}
+			font = "hoi_20b"
 			size = { x=212 y=23 }
 			text = "FLEET_NAME_HERE"
 		}
 
 		instantTextboxType = {
 			name = "taskforce_count"
-			position = {x=318 y=10}
-			font = "hoi_18mbs"
+			position = {x=200 y=17}
+			font = "hoi_20b"
 			maxWidth = 90
 			maxHeight = 23
 			format = center
@@ -546,7 +564,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "btn_close"
-			position = {x=454 y=5}
+			position = {x=296 y=12}
 			spriteType = "GFX_NV_btn_close"
 			pdx_tooltip = "DESELECT_UNIT"
 			clicksound = click_default
@@ -556,14 +574,14 @@ guiTypes = {
 			name = "btn_fleet_color"
 			quadTextureSprite = "GFX_group_marker3"
 			size = { x = 25 y = 25 }
-			position = { x=461 y = 45}
+			position = { x=316 y = 45}
 			pdx_tooltip = "CHOOSE_INSIGNIA"
 			clicksound = click_default
 		}
 
 		iconType = {
 			name = "pride_of_the_fleet_icon"
-			position = {x=451 y=40}
+			position = {x=264 y=12}
 			spriteType = "GFX_NV_icon_pride"
 			pdx_tooltip = "FLEET_CONTAINS_PRIDE_OF_THE_FLEET"
 		}
@@ -572,19 +590,19 @@ guiTypes = {
 			name = "fuel_icon"
 			spriteType = "GFX_fuel_extended_strip"
 			frame = 1
-			position = {x=455 y=75}
+			position = {x=304 y=38}
 		}
 
 		iconType = {
 			name = "fuel_efficiency_warning_icon"
 			spriteType = "GFX_mapicon_unit_invalid_orders"
-			position = { x=450 y=75 }
+			position = {x=304 y=38}
 		}
 
 		buttonType ={
 			name = "air_base_btn"
 			quadTextureSprite = "GFX_mapicon_air_base"
-			position = { x=453 y=105 }
+			position = { x=296 y=96 }
 			frame = 2
 		}
 
@@ -610,7 +628,7 @@ guiTypes = {
 		buttonType = {
 			name = "select_all_btn"
 			spriteType = "GFX_select_all_armylist_short_btn"
-			position = { x=394 y=142 }
+			position = { x=232 y=122 }
 			clicksound = click_default
 			font = "hoi_18mbs"
 			text = "SELECT_ALL"
@@ -618,9 +636,9 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "active_in_regions"
-			position = {x=16 y=140}
-			font = "hoi_18mbs"
-			maxWidth = 290
+			position = {x=8 y=116}
+			font = "Main_14_black"
+			maxWidth = 90
 			maxHeight = 23
 			format = left
 			text = "Active in Regions: 4"
@@ -628,18 +646,18 @@ guiTypes = {
 
 		buttonType = {
 			name = "leader_button"
-			position = {x=8 y=47}
+			position = {x=10 y=46}
 			spriteType = "GFX_leader_unknown"
-			scale = 0.39
+			scale = 0.35
 			clicksound = click_default
 		}
 
 		iconType = {
 			name = "leader_icon"
-			position = {x=8 y=47}
+			position = {x=10 y=46}
 			quadTextureSprite ="GFX_leader_unknown"
 			alwaystransparent = yes
-			scale = 0.39
+			scale = 0.35
 		}
 
 		iconType = {
@@ -652,7 +670,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "click_to_assign"
 			position = { x = 8 y = 68 }
-			font = "hoi_16mbs"
+			font = "Main_14_black"
 			text = "CLICK_TO_ASSIGN"
 			maxWidth = 60
 			maxHeight = 40
@@ -661,24 +679,24 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		iconType = {
+		iconType = { #Not Needed
 			name = "naval_unit_leader_frame"
-			position = {x=4 y=40}
+			position = {x=9999 y=9999}
 			spriteType ="GFX_naval_unit_leader_frame"
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "btn_trait_tree"
-			position = {x=8 y=110}
+			position = {x=10 y=97}
 			spriteType = "GFX_leader_details_icon"
 			pdx_tooltip = "CLICK_TO_ASSIGN_TRAITS"
 		}
 
 		instantTextboxType = {
 			name = "leader_desc"
-			position = {x=81 y=50}
-			font = "hoi_16mbs"
+			position = {x=74 y=39}
+			font = "hoi_20b"
 			maxWidth = 75
 			maxHeight = 23
 			format = left
@@ -687,8 +705,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "leader_name"
-			position = {x=81 y=66}
-			font = "hoi_16mbs"
+			position = {x=74 y=60}
+			font = "Main_14_black"
 			maxWidth = 140
 			maxHeight = 23
 			fixedsize = yes
@@ -698,13 +716,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_attack_icon"
 			spriteType = "GFX_trait_attack"
-			position = { x=218 y=47 }
+			position = { x=228 y=38 }
 		}
 
 		instantTextboxType = {
 			name = "leader_stat_attack_text"
-			position = {x=216 y=69}
-			font = "hoi_16mbs"
+			position = {x=228 y=62}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -714,13 +732,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_defense_icon"
 			spriteType = "GFX_trait_defense"
-			position = { x=236 y=47 }
+			position = { x=246 y=38 }
 		}
 
 		instantTextboxType = {
 			name = "leader_stat_defense_text"
-			position = {x=234 y=69}
-			font = "hoi_16mbs"
+			position = {x=246 y=62}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -730,13 +748,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_maneuvering_icon"
 			spriteType = "GFX_trait_maneuvering"
-			position = { x=254 y=47 }
+			position = { x=264 y=38 }
 		}
 
 		instantTextboxType = {
 			name = "leader_stat_maneuvering_text"
-			position = {x=252 y=69}
-			font = "hoi_16mbs"
+			position = {x=264 y=62}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -746,13 +764,13 @@ guiTypes = {
 		iconType = {
 			name = "leader_stat_coordination_icon"
 			spriteType = "GFX_trait_coordination"
-			position = { x=271 y=47 }
+			position = { x=281 y=38 }
 		}
 
 		instantTextboxType = {
 			name = "leader_stat_coordination_text"
-			position = {x=269 y=69}
-			font = "hoi_16mbs"
+			position = {x=281 y=62}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 23
 			format = center
@@ -761,10 +779,10 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "traits_grid"
-			position = {x=252 y=55}
-			size = {width=120 height=50}
-			slotsize = {width=22 height=32}
-			max_slots_vertical = 2
+			position = {x=-26 y=110}
+			size = {width=200 height=50}
+			slotsize = {width=16 height=32}
+			max_slots_vertical = 1
 			Orientation = "UPPER_LEFT"
 
 			background = {
@@ -776,8 +794,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "ships_compact"
-			position = {x=73 y=95}
-			size = { width=300 height=40 }
+			position = {x=63 y=72}
+			size = { width=00 height=40 }
 			Orientation = upper_left
 
 			buttonType = {
@@ -823,7 +841,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "taskforce_view_entry"
 		position = {x=0 y=-0}
-		size = { width=492 height=125 }
+		size = { width=122 height=132 }
 		Orientation = upper_left
 		clipping = no
 
@@ -836,9 +854,10 @@ guiTypes = {
 			name = "background_sprite"
 			spriteType = "GFX_task_force_bg"
 			alwaystransparent = yes
+			position = {x=6 y=0}
 		}
 
-		iconType = {
+		iconType = { # Not Needed
 			name = "highlight"
 			position = { x=0 y=0 }
 			spriteType = "GFX_task_force_bg_hl"
@@ -847,20 +866,20 @@ guiTypes = {
 
 		buttonType = {
 			name = "insigna"
-			position = {x=8 y=5}
+			position = {x=10 y=0}
 			spriteType = "GFX_theatre_army_shield"
 		}
 
 		iconType = {
 			name = "pride"
-			position = {x=295 y=5}
+			position = {x=236 y=0}
 			spriteType = "GFX_NV_icon_pride"
 		}
 
 		editBoxType = {
 			name = "unit_name"
-			position = {x=70 y=8}
-			font = "hoi_18"
+			position = {x=50 y=1}
+			font = "hoi_20b"
 			size = { x=212 y=23 }
 			orientation = left
 		}
@@ -868,21 +887,21 @@ guiTypes = {
 		buttonType ={
 			name ="air_base"
 			quadTextureSprite = "GFX_mapicon_air_base"
-			position = { x=330 y=5 }
+			position = { x=300 y=68 }
 			frame = 2
 		}
 
 		buttonType = {
 			name = "btn_composition_editor"
 			spriteType = "GFX_NV_btn_composition_editor"
-			position = {x=450 y=85}
+			position = {x=230 y=96}
 			pdx_tooltip = "OPEN_TASK_FORCE_COMPOSITION_EDITOR"
 			pdx_tooltip_delayed = "TASK_FORCE_COMPOSITION_EDITOR_DESC"
 		}
 
 		buttonType = {
 			name = "select_btn"
-			position = { x=389 y=3 }
+			position = { x=262 y=96 }
 			spriteType = "GFX_NV_btn_select"
 			text = "SELECT"
 			font = "hoi_16mbs"
@@ -890,7 +909,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "deselect_btn"
-			position = {x=454 y=3}
+			position = {x=298 y=-1}
 			spriteType = "GFX_NV_btn_close"
 			pdx_tooltip = "DESELECT_UNIT"
 			clicksound = click_default
@@ -900,7 +919,7 @@ guiTypes = {
 		iconType = {
 			name = "reserve_fleet_icon"
 			spriteType = "GFX_NV_icon_reserve_fleet"
-			position = { x=356 y=3 }
+			position = { x=306 y=3 }
 			pdx_tooltip = "TASK_FORCE_IS_RESERVE_FLEET"
 		}
 
@@ -908,21 +927,21 @@ guiTypes = {
 		buttonType = {
 			name = "fleet_insigna"
 			quadTextureSprite = "GFX_theatre_army_shield"
-			position = { x=356 y=5 }
+			position = { x=270 y=1 }
 			frame = 4
 			scale = 0.8
 		}
 		
 		iconType = {
 			name = "current_mission_bg"
-			position = {x=8 y=38}
+			position = {x=20 y=28}
 			spriteType ="GFX_task_force_mission_bg"
 		}
 
 		containerWindowType = {
 			name = "ships_compact"
-			position = {x=10 y=80}
-			size = { width=460 height=81 }
+			position = {x=64 y=44}
+			size = { width=260 height=81 }
 			Orientation = upper_left
 
 #			background = {
@@ -934,10 +953,10 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "activity_description"
-			position = { x=60 y=38 }
+			position = { x=74 y=12 }
 			text = "I DO THAT"
-			font = "hoi_16mbs"
-			maxWidth = 299
+			font = "hoi_20b"
+			maxWidth = 236 
 			maxHeight = 40
 			format = left
 			fixedsize = yes
@@ -959,14 +978,14 @@ guiTypes = {
 
 		iconType = {
 			name = "current_activity"
-			position = { x=12 y=42 }
+			position = {x=24 y=32}
 			spriteType = "GFX_NV_all_activities"
 			frame = 1
 		}
 
 		iconType = {
 			name = "fuel_stocks_icon"
-			position = {x=355 y=47}
+			position = {x=306 y=22}
 			spriteType = "GFX_fuel_extended_strip"
 			frame = 7
 		}
@@ -974,24 +993,24 @@ guiTypes = {
 		iconType = {
 			name = "fuel_efficiency_warning_icon"
 			spriteType = "GFX_mapicon_unit_invalid_orders"
-			position = { x=350 y=47 }
+			position = { x=306 y=22 }
 		}
 
 		iconType = {
 			name = "split_for_repair_icon"
-			position = {x=385 y=45}
+			position = {x=8 y=95}
 			spriteType = "GFX_NV_icon_split_for_repair"
 		}
 
 		iconType = {
 			name = "repair_priority_icon"
-			position = {x=418 y=45}
+			position = {x=40 y=95}
 			spriteType = "GFX_NV_btn_repair_priority"
 		}
 
 		iconType = {
 			name = "aggressiveness_icon"
-			position = {x=447 y=45}
+			position = {x=70 y=95}
 			spriteType = "GFX_NV_btn_aggressiveness_small"
 			frame = 1
 		}
@@ -1000,7 +1019,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "ships_detailed"
 			position = {x=0 y=122}
-			size = { width=460 height=500 }
+			size = { width=322 height=500 }
 			Orientation = upper_left
 			clipping = no
 
@@ -1049,7 +1068,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ships_compact_drag_drop"
 		position = {x=0 y=161}
-		size = { width=460 height=00 }
+		size = { width=322 height=00 }
 		Orientation = upper_left
 
 		# Code inserts ship_entry_compact here next to each other
@@ -1058,7 +1077,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ship_entry_detailed"
 		position = {x=0 y=0}
-		size = { width=460 height=41 }
+		size = { width=322 height=41 }
 		Orientation = upper_left
 		clipping = no
 
@@ -1235,7 +1254,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ship_entry_compact"
 		position = {x=0 y=0}
-		size = { width=46 height=34 }
+		size = { width=36 height=34 }
 		Orientation = upper_left
 		clipping = no
 
@@ -1287,8 +1306,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "ships_count"
-			position = {x=34 y=2}
-			font = "hoi_16mbs"
+			position = {x=32 y=2}
+			font = "Main_14_black"
 			maxWidth = 30
 			maxHeight = 16
 			format = left
@@ -1319,7 +1338,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "move_ships_window"
 		position = { x=0 y=0 }
-		size = { width=535 height=58 } # The height is actually not the height since that is dynamic, the height is this value + number of entries (up to maximum size of "ships" window below)
+		size = { width=335 height=58 } # The height is actually not the height since that is dynamic, the height is this value + number of entries (up to maximum size of "ships" window below)
 		orientation = center
 		moveable = yes
 		fade_time = 300
@@ -1359,7 +1378,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "ships"
 			position = { x = 2 y = 45 }
-			size = { width = 534 height = 340 }
+			size = { width = 322 height = 340 }
 			verticalScrollbar = "right_vertical_slider"	
 			margin = {top=-4 left=0 bottom=0 right=0}
 			
@@ -1420,7 +1439,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "ships"
 			position = { x = 4 y = 113 }
-			size = { width = 534 height = 1000 }
+			size = { width = 322 height = 1000 }
 			#verticalScrollbar = "right_vertical_slider"
 			margin = {top=-4 left=0 bottom=0 right=0}
 
