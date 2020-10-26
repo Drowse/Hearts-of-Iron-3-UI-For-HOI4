@@ -58,7 +58,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = -1 }
+			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
@@ -115,7 +115,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = -1 }
+			position = { x = 0 y = @1938 }
 		}
 		
 		categories = {
@@ -165,7 +165,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = -1 }
+			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
@@ -226,7 +226,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = -1 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
@@ -269,7 +269,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = 3 }
+			position = { x = 2 y = @1942 }
 		}
 		
 		categories = {
@@ -307,7 +307,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = 3 }
+			position = { x = 2 y = @1943 }
 		}
 		
 		categories = {
@@ -349,7 +349,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = -1 }
+			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
@@ -400,7 +400,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 6 y = -1 }
+			position = { x = 0 y = @1944 }
 		}
 		
 		categories = {
@@ -442,15 +442,15 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1936 }
+			position = { x = 2 y = @1936 }
 		}
 		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = paratrooper
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = paratrooper
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_paratroopers"
 			}
@@ -497,7 +497,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @1936 }
+			position = { x = 2 y = @1939 }
 		}
 		
 		categories = {
@@ -535,7 +535,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 6 y = @1936 }
+			position = { x = 2 y = @1943 }
 		}
 		
 		categories = {
@@ -568,12 +568,12 @@ technologies = {
 			marine
 		}
 		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = marine
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = marine
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_marines"
 			}			
@@ -589,7 +589,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 3 y = @1936 }
 		}
 		
 		categories = {
@@ -627,7 +627,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1936 }
+			position = { x = 3 y = @1939 }
 		}
 		
 		categories = {
@@ -659,7 +659,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 3 y = @1943 }
 		}
 		
 		categories = {
@@ -687,12 +687,12 @@ technologies = {
 			mountaineers
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = mountaineers
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = mountaineers
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_mountineers"
 			}
@@ -708,7 +708,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1936 }
+			position = { x = 5 y = @1936 }
 		}
 		
 		categories = {
@@ -737,7 +737,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @1936 }
+			position = { x = 5 y = @1939 }
 		}
 		
 		categories = {
@@ -759,7 +759,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 6 y = @1936 }
+			position = { x = 5 y = @1943 }
 		}
 		
 		categories = {
@@ -800,7 +800,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 0 }
+			position = { x = 4 y = @1938 }
 		}
 		
 		categories = {
@@ -836,7 +836,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = 2 }
+			position = { x = 3 y = @1940 }
 		}
 		
 		categories = {
@@ -867,7 +867,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = -2 }
+			position = { x = 5 y = @1940 }
 		}
 		
 		categories = {
@@ -901,7 +901,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 3 y = @1942 }
 		}
 		
 		categories = {
@@ -934,7 +934,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = -2 }
+			position = { x = 5 y = @1942 }
 		}
 		
 		categories = {
@@ -963,7 +963,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = 0 }
+			position = { x = 4 y = @1944 }
 		}
 		
 		categories = {
@@ -1037,6 +1037,49 @@ technologies = {
 		}
 	}
 
+	mountain_warfare = {
+
+		research_cost = 1
+
+		# only from focus!
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: GRE_mountain_training_effect
+		infantry = {
+			mountain = {
+				defence = 0.05
+				movement = 0.05
+			}
+		}
+
+		marine = {
+			mountain = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			mountain = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
+
 	night_vision = {
 
 		land_night_attack = 0.1
@@ -1090,7 +1133,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1943 }
+			position = { x = 0 y = @1946 }
 		}
 		
 		categories = {
@@ -1256,7 +1299,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1918 }
+			position = { x = 0 y = @1938 }
 		}
 		
 		categories = {
@@ -1353,7 +1396,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1918 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
@@ -1432,7 +1475,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1918 }
+			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
@@ -1478,12 +1521,12 @@ technologies = {
 			motorized_equipment_1
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = motorized
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_motorized"
 			}			
@@ -1789,7 +1832,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1936 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
@@ -1830,7 +1873,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = -2 }
+			position = { x = 2 y = @1941 }
 		}
 		
 		categories = {
@@ -1861,7 +1904,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = -2 }
+			position = { x = 2 y = @1943 }
 		}
 		
 		categories = {
@@ -1891,7 +1934,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
@@ -1920,7 +1963,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1936 }
+			position = { x = 0 y = @1944 }
 		}
 		
 		categories = {
@@ -1946,6 +1989,20 @@ technologies = {
 
 		enable_subunits = {
 			bicycle_battalion
+		}		
+	}
+
+	camelry = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			camelry
 		}		
 	}
 }
